@@ -1,0 +1,36 @@
+﻿<div class="container m-t-80 p-r-75 p-l-75">
+    <div class="row m-b-15">
+        <div class="col">
+            <a href="/" class="navbar-brand pull-right" style="margin-top:-15px; margin-right:15px;">
+                <strong> Alyrics</strong>
+                <!-- <img style="margin-top: -15px;" src="uploads/misc/1441678607-1439621257-lyrics-logo.png" alt="logo" class="logo desaturate" width="180"> -->
+            </a>
+            <nav class="nav nav-pills">
+                @*<a class="nav-link { $request->segment(1) == 'about-us' ? 'active' : '' }}" href="{ url('/about-us') }}">About Us</a>
+                <a class="nav-link {{ $request->segment(1) == 'our-vision' ? 'active' : '' }}" href="{ url('/our-vision') }}">Our Vission and Mission</a>
+                <a class="nav-link { $request->segment(1) == 'privacy' ? 'active' : '' }}" href="{ url('/privacy') }}">Privacy</a>
+                <a class="nav-link { $request->segment(1) == 'term-conditions' ? 'active' : '' }}" href="{ url('/term-conditions') }}">Term and Conditions</a>
+                <a class="nav-link { $request->segment(1) == 'feed' ? 'active' : '' }}" href="{ url('/feed') }}">Feed</a>
+                <a class="nav-link { $request->segment(1) == 'sitemap' ? 'active' : '' }}" href="{ url('/sitemap') }}">Sitemap</a>*@
+                <a class="nav-link" href="/about-us">About Us</a>
+                <a class="nav-link" href="/our-vision">Our Vission and Mission</a>
+                <a class="nav-link" href="/privacy">Privacy</a>
+                <a class="nav-link" href="/term-conditions">Term and Conditions</a>
+                <a class="nav-link" href="/feed">Feed</a>
+                <a class="nav-link" href="/sitemap">Sitemap</a>
+            </nav>
+        </div>
+    </div>
+    <hr>
+    <div class="row p-b-50">
+        <div class="col">
+            <p>© 2018 Songs Manager. All rights reserved</p>
+        </div>
+        <div class="float-right">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-2x fa-facebook-square fbbutton"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa fa-2x fa-twitter-square twitterbutton"></i></a>
+            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-2x fa-google-plus-square googlebutton"></i></a>
+            <a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-2x fa-pinterest-square pinterestbutton"></i></a>
+        </div>
+    </div>
+</div>

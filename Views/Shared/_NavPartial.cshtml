@@ -1,0 +1,89 @@
+﻿@*@inject('request', 'Illuminate\Http\Request')*@
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+    <div class="container p-r-75 p-l-75">
+        <a class="navbar-brand" href="@Context.Request.Host"><strong><i class="fa fa-play"></i> @ViewData["Title"]</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            @{
+                var location = new Uri($"{Context.Request.Scheme}://{Context.Request.Host}{Context.Request.Path}{Context.Request.QueryString}");
+            }
+            @*<ul class="navbar-nav mr-auto">
+        <li class="nav-item { $request->segment(1) == null ? 'active' : '' }}">
+            <a class="nav-link" href="{ url('/') }}">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item { $request->segment(1) == 'top_songs' ? 'active' : '' }}">
+            <a class="nav-link" href="{ url('top_songs') }}">Top 10</a>
+        </li>
+        <li class="nav-item { $request->segment(1) == 'artists' ? 'active' : '' }}">
+            <a class="nav-link" href="{ url('/artists') }}">Artists</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Genres
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                @foreach ($genres as $genre)
+            <a class="dropdown-item" href="{ url('genres/'.$genre->slug) }}">{ $genre->name }}</a>
+                @endforeach*@
+            <!-- <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Something else here</a> -->
+            @*</div>
+            </li>
+        </ul>*@
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="top_songs">Top 10</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Artists">Artists</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Genres
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/genres">Genres</a>
+                        <!-- <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a> -->
+                    </div>
+                </li>
+            </ul>
+
+            @*@if (!$request->segment(1) == null)
+            <form class="form-inline my-2 my-lg-0 p-r-45" action="/search" method="POST">
+                { csrf_field() }}
+                <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            @endif*@
+            @*<ul class="navbar-nav float-left1">
+                guest
+                <li class="nav-item">
+                    <a class="nav-link" href="{ url('/login') }}">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{ url('/register') }}">Register</a>
+                </li>
+                else
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{ Auth::user()->name }}</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">Logout</a>
+                        <form id="logout-form" action="{ route('logout') }}" method="POST" style="display: none;">
+                            { csrf_field() }}
+                        </form>
+                    </div>
+                </li>
+                endguest
+            </ul>*@
+        </div>
+    </div>
+</nav>

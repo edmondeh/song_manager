@@ -1,0 +1,91 @@
+﻿@{
+    ViewData["Title"] = "Song Lyrics from A to Z";
+}
+
+<div class="container m-t-80 p-r-75 p-l-75">
+    <div class="row">
+        <div class="col-9">
+            <div class="jumbotron">
+                <h1 class="display-4">Search for lyrics!</h1>
+                <p class="lead">Search for perfect lyrics by great Artists!</p>
+                <form class="form-inline my-2 my-lg-0" method="POST" action="/search">
+                    @*{ csrf_field() }}*@
+                    <input class="form-control col-6 mr-sm-2" name="q" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    WHAT'S HOT?
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        @*@foreach ($featured as $song)
+                            <div class="col-xs-6 col-md-4">
+                                <a href="{ url('songs/'.$song->slug) }}">
+                                    <img class="img-responsive img-thumbnail" src="{ asset($song->artists->getMedia('artist-images')->last()->getUrl()) ? asset($song->artists->getMedia('artist-images')->last()->getUrl()) : asset('storage/avatar/images.png') }}" alt="{ $song->artists->name }}">
+                                </a>
+                                <p class="text-center my-0"><a href="{ url('artists/'.$song->artists->slug) }}">{ $song->artists->name }}</a></p>
+                                <p class="text-center"><a href="{ url('songs/'.$song->slug) }}" class="song-link">"{ $song->name }}"</a></p>
+                            </div>
+                            @endforeach*@
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    Recently Added Lyrics
+                </div>
+                <div class="card-body1 row1">
+                    <div class="col1">
+                        <table class="table table-hover">
+                            <tbody>
+                                @*@foreach ($recently as $song)
+                                    <tr>
+                                        <th width="7%" class="pl-4" scope="row">{ $loop->iteration }}</th>
+                                        <td><a href="{ url('/songs/'.$song->slug) }}">{ $song->name }}</a></td>
+                                        <td>@foreach ($song->artist() as $artist) <a href="{ url('/artists/'.$artist->slug) }}">{ $artist->name }}</a> @endforeach</td>
+                                        <td>{ $song->album }}</td>
+                                    </tr>
+                                    @endforeach*@
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    Featured
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <a href="@*{ route('lyrics.add') }}*@" class="btn btn-outline-primary btn-block mb-3">Add Lyrics</a>
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    Top 10 Songs
+                </div>
+                <ul class="list-group list-group-flush">
+                    @*@foreach ($top10songs as $song)
+                        <a href="{ url('songs/'.$song->slug )}}" class="list-group-item list-group-item-action">{ $song->name }}</a>
+                        @endforeach*@
+                </ul>
+            </div>
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    Top 10 Artists
+                </div>
+                <ul class="list-group list-group-flush">
+                    @*@foreach ($top10artists as $artist)
+                        <a href="{ url('artists/'.$artist->slug )}}" class="list-group-item list-group-item-action">{ $artist->name }}</a>
+                        @endforeach*@
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
