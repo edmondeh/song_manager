@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Songs_Manager.Data.Models
 {
-    public class Artist
+    public class Artist : ITrackable
     {
         public int ArtistId { get; set; }
         [Required]
@@ -17,5 +17,9 @@ namespace Songs_Manager.Data.Models
         public string Bio { get; set; }
         public List<Artist_Song> Artist_Songs { get; set; }
 
+        public DateTime CreatedAt { get; set; }
+        public string CreatedBy { get; set; }
+        public DateTime LastUpdatedAt { get; set; }
+        public string LastUpdatedBy { get; set; }
     }
 }

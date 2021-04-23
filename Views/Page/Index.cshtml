@@ -7,7 +7,7 @@
         <div class="col-9">
             <div class="jumbotron">
                 <h1 class="display-4">Search for lyrics!</h1>
-                <p class="lead">Search for perfect lyrics by great Artists!</p>
+                <p class="lead">@{ var sv = DateTime.Now; } @sv Search for perfect lyrics by great Artists!</p>
                 <form class="form-inline my-2 my-lg-0" method="POST" action="/search">
                     @*{ csrf_field() }}*@
                     <input class="form-control col-6 mr-sm-2" name="q" type="search" placeholder="Search" aria-label="Search">

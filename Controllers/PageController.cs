@@ -12,7 +12,7 @@ namespace Songs_Manager.Controllers
     {
         public IActionResult Index()
         {
-
+            
             return View();
         }
     }

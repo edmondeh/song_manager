@@ -9,6 +9,12 @@
   <ItemGroup>
     <Compile Remove="Data\Migrations\20210421165326_Migration 1.cs" />
     <Compile Remove="Data\Migrations\20210421165326_Migration 1.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210423170725_Migration 1.cs" />
+    <Compile Remove="Data\Migrations\20210423170725_Migration 1.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210423190721_Seed.cs" />
+    <Compile Remove="Data\Migrations\20210423190721_Seed.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210423191433_Seed.cs" />
+    <Compile Remove="Data\Migrations\20210423191433_Seed.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Songs_Manager.Data.Services;
+using Microsoft.AspNetCore.Http;
 
 namespace Songs_Manager
 {
@@ -35,6 +36,7 @@ namespace Songs_Manager
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages().AddRazorRuntimeCompilation();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             //Configure the Services
             services.AddTransient<ArtistService>();

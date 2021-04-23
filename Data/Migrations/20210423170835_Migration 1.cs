@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Songs_Manager.Data.Migrations
 {
@@ -12,6 +13,8 @@ namespace Songs_Manager.Data.Migrations
                 {
                     ArtistId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    Created_At = table.Column<DateTime>(nullable: false),
+                    Updated_At = table.Column<DateTime>(nullable: false),
                     Name = table.Column<string>(nullable: false),
                     Slug = table.Column<string>(nullable: false),
                     Country = table.Column<string>(nullable: true),
@@ -28,8 +31,11 @@ namespace Songs_Manager.Data.Migrations
                 {
                     SongId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    Created_At = table.Column<DateTime>(nullable: false),
+                    Updated_At = table.Column<DateTime>(nullable: false),
                     Name = table.Column<string>(nullable: false),
                     Slug = table.Column<string>(nullable: false),
+                    Featured = table.Column<int>(nullable: false),
                     Album = table.Column<string>(nullable: true),
                     Lyrics = table.Column<string>(nullable: false),
                     UserName = table.Column<string>(nullable: true)
@@ -45,6 +51,8 @@ namespace Songs_Manager.Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    Created_At = table.Column<DateTime>(nullable: false),
+                    Updated_At = table.Column<DateTime>(nullable: false),
                     ArtistId = table.Column<int>(nullable: false),
                     SongId = table.Column<int>(nullable: false)
                 },
