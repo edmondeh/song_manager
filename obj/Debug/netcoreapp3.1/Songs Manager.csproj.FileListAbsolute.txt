@@ -465,3 +465,4 @@ D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\net
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Error.cshtml.g.cs
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Artists\Index.cshtml.g.cs

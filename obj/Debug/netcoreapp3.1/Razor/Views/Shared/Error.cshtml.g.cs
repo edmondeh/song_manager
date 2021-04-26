@@ -26,8 +26,22 @@ using Songs_Manager.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\Views\_ViewImports.cshtml"
+using Songs_Manager.Data.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\Views\_ViewImports.cshtml"
+using Songs_Manager.Data.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d6a5625cc8fb4476f348b0fe9041c550465d8bf9", @"/Views/Shared/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4bd723558d27b8009fa1ee3b615d5af65ec4a94c", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7f220136cf9098498f5c513a335a9c433e64569f", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Error : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ErrorViewModel>
     {
         #pragma warning disable 1998

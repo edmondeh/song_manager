@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Songs_Manager.Data.Models;
 using Songs_Manager.Data.Services;
 
 namespace Songs_Manager.Controllers
@@ -18,12 +19,12 @@ namespace Songs_Manager.Controllers
         }
 
         // GET: Artists
-        public JsonResult Index()
+        public IActionResult Index()
         {
-
-            var allArtists = _artistService.GetAllArtistsWithSongs();
-            return Json(allArtists);
-            //return View();
+            
+            List<Artist> allArtists = _artistService.GetAllArtists();
+            //return Json(allArtists);
+            return View(allArtists);
         }
 
         // GET: Artists/Details/5

@@ -1,0 +1,53 @@
+﻿@model List<Artist>
+@{
+    ViewData["Title"] = "All Artists";
+}
+
+<div class="container m-t-80 p-r-75 p-l-75 bg-white">
+    <!-- <div class="row">
+        <div class="col">
+            <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="row">
+        <div class="col-9">
+
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    All Artists
+                </div>
+                @*<div class="card-body">
+                    <div class="row">
+                        @foreach ($artists as $artist)
+                        <div class="mb-4 col-xs-6 col-md-4">
+                            <a href="{ url('artists/'.$artist->slug) }}">
+                                <img class="img-responsive img-thumbnail" src="{ asset($artist->getMedia('artist-images')->last()->getUrl()) ? asset($artist->getMedia('artist-images')->last()->getUrl()) : asset('storage/avatar/images.png') }}" alt="{ $artist->name }}">
+                            </a>
+                            <p><a href="{ url('artists/'.$artist->slug) }}">{ $artist->name }} </a></p>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+                { $artists->links('vendor.pagination.bootstrap-4-sm') }}*@
+                <div class="card-body">
+                    <div class="row">
+                        @foreach (var artists in Model)
+                        {<div class="mb-4 col-xs-6 col-md-4">
+                            <a href="@SiteInfo.getUrl()/Artists/@artists.Slug">
+                                <img class="img-responsive img-thumbnail" src="" alt="@artists.Name">
+                            </a>
+                            <p><a href="Artists/@artists.Slug">@artists.Name </a></p>
+                        </div>}
+                    </div>
+                </div>
+                Pagination
+            </div>
+        </div>
+    </div>
+</div>

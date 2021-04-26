@@ -32,5 +32,16 @@ namespace Songs_Manager.Data.Services
 
             return _artistWithSongs;
         }
+
+        public List<TopTenArtists> GetTopTenArtists()
+        {
+            var _topTenArtists = _context.Artists.Select(artist => new TopTenArtists()
+            {
+                Name = artist.Name,
+                Slug = artist.Slug
+            }).ToList();
+
+            return _topTenArtists;
+        }
     }
 }
