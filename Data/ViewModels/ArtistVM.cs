@@ -12,6 +12,7 @@ namespace Songs_Manager.Data.ViewModels
         public string Slug { get; set; }
         public string Country { get; set; }
         public string Bio { get; set; }
+        public List<Song> Songs { get; set; }
     }
 
     public class ArtistWithSongs

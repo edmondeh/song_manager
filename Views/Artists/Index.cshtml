@@ -41,7 +41,7 @@
                         @foreach (var artists in Model)
                         {<div class="mb-4 col-xs-6 col-md-4">
                             <a href="@siteUrl/artists/@artists.Slug">
-                                <img class="img-responsive img-thumbnail" src="" alt="@artists.Name">
+                                <img class="img-responsive img-thumbnail" src="@siteUrl/images/avatar.png" alt="@artists.Name">
                             </a>
                             <p><a href="@siteUrl/artists/@artists.Slug">@artists.Name </a></p>
                         </div>}

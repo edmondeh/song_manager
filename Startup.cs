@@ -67,6 +67,10 @@ namespace Songs_Manager
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                    name: "artists",
+                    pattern: "artists/{slug}",
+                    defaults: new { controller = "Artists", action = "Show" });
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Page}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();

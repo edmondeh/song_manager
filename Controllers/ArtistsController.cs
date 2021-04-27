@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Songs_Manager.Data.Models;
 using Songs_Manager.Data.Services;
+using Songs_Manager.Data.ViewModels;
 
 namespace Songs_Manager.Controllers
 {
@@ -19,17 +21,18 @@ namespace Songs_Manager.Controllers
         }
 
         // GET: Artists
-        public IActionResult Index(string slug = null)
+        public IActionResult Index()
         {
-            if (!String.IsNullOrEmpty(slug))
-            {
-                return View("Details", slug);
-            }
-            else
-            {
-                List<Artist> allArtists = _artistService.GetAllArtists();
-                return View(allArtists);
-            }
+            //String.IsNullOrEmpty(slug);
+            List<Artist> allArtists = _artistService.GetAllArtists();
+            return View(allArtists);
+        }
+
+        public JsonResult Show(string slug)
+        {
+            ArtistVM artist = _artistService.GetArtist(slug);
+            //return View(artistVM);
+            return Json(artist);
         }
 
         // GET: Artists/Details/5
