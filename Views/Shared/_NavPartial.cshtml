@@ -1,8 +1,10 @@
-﻿@*@inject('request', 'Illuminate\Http\Request')*@
+﻿@{ 
+    string siteUrl = Context.Request.Scheme + System.Uri.SchemeDelimiter + Context.Request.Host.Value;
+}
 
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
     <div class="container p-r-75 p-l-75">
-        <a class="navbar-brand" href="@Context.Request.Host"><strong><i class="fa fa-play"></i> @ViewData["Title"]</strong></a>
+        <a class="navbar-brand" href="@siteUrl"><strong><i class="fa fa-play"></i> Song Lyrics from A to Z</strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

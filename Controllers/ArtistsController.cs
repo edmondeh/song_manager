@@ -19,12 +19,17 @@ namespace Songs_Manager.Controllers
         }
 
         // GET: Artists
-        public IActionResult Index()
+        public IActionResult Index(string slug = null)
         {
-            
-            List<Artist> allArtists = _artistService.GetAllArtists();
-            //return Json(allArtists);
-            return View(allArtists);
+            if (!String.IsNullOrEmpty(slug))
+            {
+                return View("Details", slug);
+            }
+            else
+            {
+                List<Artist> allArtists = _artistService.GetAllArtists();
+                return View(allArtists);
+            }
         }
 
         // GET: Artists/Details/5
