@@ -40,6 +40,7 @@ namespace Songs_Manager
 
             //Configure the Services
             services.AddTransient<ArtistService>();
+            services.AddTransient<SongService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -66,6 +67,10 @@ namespace Songs_Manager
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllerRoute(
+                    name: "songs",
+                    pattern: "top_songs",
+                    defaults: new { controller = "Songs", action = "Top_Songs" });
                 endpoints.MapControllerRoute(
                     name: "artists",
                     pattern: "artists/{slug}",

@@ -1,0 +1,53 @@
+﻿@model List<Song>
+@{
+    ViewData["Title"] = "Top Songs";
+    string siteUrl = Context.Request.Scheme + System.Uri.SchemeDelimiter + Context.Request.Host.Value;
+}
+
+<div class="container m-t-80 p-r-75 p-l-75 bg-white">
+    <div class="row">
+        <div class="col-9">
+
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    Top Lyrics
+                </div>
+                <div class="card-body p-0">
+                    <div class="row1">
+                        <div class="col p-0 m-0">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th class="pl-4">#</th>
+                                        <th>Song</th>
+                                        <th>Artist</th>
+                                        <th>Album</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @*@foreach ($songs as $song)
+                                    <tr>
+                                        <th width="7%" class="pl-4" scope="row">{ $loop->iteration }}</th>
+                                        <td><a href="{ url('/songs/'.$song->slug) }}">{ $song->name }}</a></td>
+                                        <td>@foreach ($song->artist() as $artist) <a href="{ url('/artists/'.$artist->slug) }}">{ $artist->name }}</a> @endforeach</td>
+                                        <td>{ $song->album }}</td>
+                                    </tr>
+                                    @endforeach*@
+                                    @{ var iteration = 0; }
+                                    @foreach (var song in Model)
+                                    {<tr>
+                                        <th width="7%" class="pl-4" scope="row">@{iteration++;}@iteration</th>
+                                        <td><a href="@siteUrl/songs/@song.Slug">@song.Name</a></td>
+                                        <td><a href="">Artist Name</a></td>
+                                        <td>@song.Album</td>
+                                    </tr>}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

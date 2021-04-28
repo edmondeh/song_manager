@@ -19,15 +19,17 @@ namespace Songs_Manager.Data.Services
 
         public ArtistVM GetArtist(string slug)
         {
-            var artist = _context.Artists.Select(artist => new ArtistVM()
+            var _artist = _context.Artists.Select(artist => new ArtistVM()
             {
                 Name = artist.Name,
                 Slug = artist.Slug,
                 Country = artist.Country,
                 Bio = artist.Bio,
-                Songs = artist.Artist_Songs.Select(n => n.Songs).ToList()
+                Songs = artist.Artist_Songs.Select(s => s.Songs).ToList(),
+                Genres = artist.Artist_Genres.Select(s => s.Genres).ToList(),
             }).Where(artist => artist.Slug == slug).FirstOrDefault();
-            return artist;
+
+            return _artist;
         }
 
         public List<Artist> GetAllArtists() => _context.Artists.ToList();

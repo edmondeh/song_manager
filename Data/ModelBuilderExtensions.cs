@@ -11,6 +11,8 @@ namespace Songs_Manager.Data
     {
         public static void Seed(this ModelBuilder modelBuilder)
         {
+            var now = DateTime.Now;
+
             modelBuilder.Entity<Artist>().HasData(
                 new Artist
                 {
@@ -230,6 +232,135 @@ namespace Songs_Manager.Data
                     Lyrics = "E di që une faj kom<br>pe di që je ka vajton<br>jena dosta po nuk mjafton<br>i need good lovin s'je ka m'kupton<br>2x<br><br>tash ti vuj vuj vuj<br>Mi kqyr story't edhe luj luj luj<br>zemra dhem dhem luj luj luj<br>e di që t'vjen edhe vuj vuj vuj<br>2x<br><br>N'lidhje<br>e di pa faj je<br>1 m'fal prej meje<br>si lan 1 mal me dhimbje<br><br>E di që une faj kom<br>pe di që je ka vajton<br>jena dosta po nuk mjafton<br>i need good lovin sje ka m'kupton<br>2x<br><br>n'mendimet e tua<br>ti hala smunesh me m'nshu<br>buzet e tua..<br>qe u kry smunen me pranu<br><br>a munesh me m'ngu veç pak<br>se s'du me t'lendu un prap<br>un s'du me hap<br>s'du me hap mo asnjë plage<br><br>tash ti vuj vuj vuj<br>mi kqyr story't edhe luj luj luj<br>zemra dhem dhem luj luj luj<br>e di që t'vjen edhe vuj vuj vuj x2<br><br>Ça du prej teje<br>hek dore prej meje<br>un pi vetes smuj<br>t'lutna leje<br>mos thuj<br>un i joti jam<br>un i joti jam<br>veten e lendon<br>mu jo sun em ndrron<br>i jemi je<br>edhe nëse s'je<br><br>E di që une faj kom<br>pe di që je ka vajton<br>jena dosta po nuk mjafton<br>i need good lovin sje ka m'kupton<br><br>Vuj vuj vuj<br>Luj luj luj<br>2x<br><br>Tash ti vuj vuj vuj<br>mi kqyr story't edhe luj luj luj<br>zemra dhem dhem luj luj luj<br>e di qe t'vjen edhe vuj vuj vuj",
                     UserName = "User 1"
                 }
+            );
+            modelBuilder.Entity<Genre>().HasData(
+                new Genre()
+                {
+                    GenreId = 1,
+                    Name = "POP",
+                    Slug = "pop",
+                    Info = "Info"
+                },
+                new Genre()
+                {
+                    GenreId = 2,
+                    Name = "Rock",
+                    Slug = "rock",
+                    Info = "Info"
+                },
+                new Genre()
+                {
+                    GenreId = 3,
+                    Name = "Country",
+                    Slug = "country",
+                    Info = "Info"
+                },
+                new Genre()
+                {
+                    GenreId = 4,
+                    Name = "Folk",
+                    Slug = "folk",
+                    Info = "Info"
+                },
+                new Genre()
+                {
+                    GenreId = 5,
+                    Name = "Hip-Hop/Rap",
+                    Slug = "hip-hop-rap",
+                    Info = "Info"
+                },
+                new Genre()
+                {
+                    GenreId = 6,
+                    Name = "Hip-Hop",
+                    Slug = "hip-hop",
+                    Info = "Info"
+                },
+                new Genre()
+                {
+                    GenreId = 7,
+                    Name = "Dance",
+                    Slug = "dance",
+                    Info = "Info"
+                },
+                new Genre()
+                {
+                    GenreId = 8,
+                    Name = "Soundtrack",
+                    Slug = "soundtrack",
+                    Info = "Info"
+                },
+                new Genre()
+                {
+                    GenreId = 9,
+                    Name = "Other",
+                    Slug = "other",
+                    Info = "Info"
+                }
+            );
+
+            modelBuilder.Entity<Artist_Song>().HasData(
+                new Artist_Song() { Id = 1, ArtistId = 1, SongId = 1 },
+                new Artist_Song() { Id = 2, ArtistId = 1, SongId = 2 },
+                new Artist_Song() { Id = 3, ArtistId = 1, SongId = 3 },
+                new Artist_Song() { Id = 4, ArtistId = 2, SongId = 4 },
+                new Artist_Song() { Id = 5, ArtistId = 2, SongId = 5 },
+                new Artist_Song() { Id = 6, ArtistId = 2, SongId = 6 },
+                new Artist_Song() { Id = 7, ArtistId = 3, SongId = 7 },
+                new Artist_Song() { Id = 8, ArtistId = 3, SongId = 8 },
+                new Artist_Song() { Id = 9, ArtistId = 3, SongId = 9 },
+                new Artist_Song() { Id = 10, ArtistId = 4, SongId = 10 },
+                new Artist_Song() { Id = 11, ArtistId = 4, SongId = 11 },
+                new Artist_Song() { Id = 12, ArtistId = 4, SongId = 12 },
+                new Artist_Song() { Id = 13, ArtistId = 5, SongId = 13 },
+                new Artist_Song() { Id = 14, ArtistId = 6, SongId = 14 },
+                new Artist_Song() { Id = 15, ArtistId = 7, SongId = 15 },
+                new Artist_Song() { Id = 16, ArtistId = 7, SongId = 16 }
+            );
+
+            modelBuilder.Entity<Artist_Genre>().HasData(
+                new Artist_Genre() { Id = 1, ArtistId = 1, GenreId = 1, CreatedAt = now, LastUpdatedAt = now },
+                new Artist_Genre() { Id = 2, ArtistId = 1, GenreId = 2, CreatedAt = now, LastUpdatedAt = now },
+                new Artist_Genre() { Id = 3, ArtistId = 2, GenreId = 2, CreatedAt = now, LastUpdatedAt = now },
+                new Artist_Genre() { Id = 4, ArtistId = 3, GenreId = 2, CreatedAt = now, LastUpdatedAt = now },
+                new Artist_Genre() { Id = 5, ArtistId = 3, GenreId = 3, CreatedAt = now, LastUpdatedAt = now },
+                new Artist_Genre() { Id = 6, ArtistId = 4, GenreId = 5, CreatedAt = now, LastUpdatedAt = now },
+                new Artist_Genre() { Id = 7, ArtistId = 4, GenreId = 6, CreatedAt = now, LastUpdatedAt = now },
+                new Artist_Genre() { Id = 8, ArtistId = 5, GenreId = 5, CreatedAt = now, LastUpdatedAt = now },
+                new Artist_Genre() { Id = 9, ArtistId = 5, GenreId = 6, CreatedAt = now, LastUpdatedAt = now },
+                new Artist_Genre() { Id = 10, ArtistId = 6, GenreId = 5, CreatedAt = now, LastUpdatedAt = now },
+                new Artist_Genre() { Id = 11, ArtistId = 6, GenreId = 6, CreatedAt = now, LastUpdatedAt = now },
+                new Artist_Genre() { Id = 12, ArtistId = 7, GenreId = 9, CreatedAt = now, LastUpdatedAt = now }
+            );
+
+            modelBuilder.Entity<Song_Genre>().HasData(
+                new Song_Genre() { Id = 1, SongId = 1, GenreId = 1, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 2, SongId = 1, GenreId = 6, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 3, SongId = 2, GenreId = 6, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 4, SongId = 3, GenreId = 9, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 5, SongId = 4, GenreId = 6, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 6, SongId = 4, GenreId = 8, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 7, SongId = 5, GenreId = 2, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 8, SongId = 5, GenreId = 4, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 9, SongId = 6, GenreId = 1, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 10, SongId = 6, GenreId = 4, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 11, SongId = 7, GenreId = 2, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 12, SongId = 7, GenreId = 4, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 13, SongId = 8, GenreId = 6, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 14, SongId = 8, GenreId = 7, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 15, SongId = 9, GenreId = 2, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 16, SongId = 9, GenreId = 3, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 17, SongId = 10, GenreId = 5, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 18, SongId = 10, GenreId = 6, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 19, SongId = 11, GenreId = 5, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 20, SongId = 11, GenreId = 6, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 21, SongId = 12, GenreId = 5, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 22, SongId = 12, GenreId = 6, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 23, SongId = 13, GenreId = 5, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 24, SongId = 13, GenreId = 6, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 25, SongId = 14, GenreId = 6, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 26, SongId = 15, GenreId = 7, CreatedAt = now, LastUpdatedAt = now },
+                new Song_Genre() { Id = 27, SongId = 16, GenreId = 7, CreatedAt = now, LastUpdatedAt = now }
             );
         }
     }

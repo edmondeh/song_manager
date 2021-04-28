@@ -64,20 +64,20 @@ namespace Songs_Manager.Data
                 if (entry.Entity is ITrackable trackable)
                 {
                     var now = DateTime.Now;
-                    var date = Convert.ToDateTime(now.ToString());
+                    //var date = Convert.ToDateTime(now.ToString());
                     //var date = DateTime.ParseExact((string)now, "yyyy-MM-dd HH:mm:ss.fffffff", System.Globalization.CultureInfo.InvariantCulture);
                     var user = GetCurrentUser();
                     switch (entry.State)
                     {
                         case EntityState.Modified:
-                            trackable.LastUpdatedAt = date;
+                            trackable.LastUpdatedAt = now;
                             trackable.LastUpdatedBy = user;
                             break;
 
                         case EntityState.Added:
-                            trackable.CreatedAt = date;
+                            trackable.CreatedAt = now;
                             trackable.CreatedBy = user;
-                            trackable.LastUpdatedAt = date;
+                            trackable.LastUpdatedAt = now;
                             trackable.LastUpdatedBy = user;
                             break;
                     }

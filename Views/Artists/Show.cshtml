@@ -1,4 +1,5 @@
 ﻿@model ArtistVM
+@using System.Web
 @{
     ViewData["Title"] = Model.Name;
     string siteUrl = Context.Request.Scheme + System.Uri.SchemeDelimiter + Context.Request.Host.Value;
@@ -35,7 +36,8 @@
                             <i class="fa fa-star"></i> Popular:
                             <b><span class="badge badge-success">Yes</span></b> |
                             <i class="fa fa-music"></i> Genres
-                            @*@foreach ($artist->genres()->pluck('name') as $genre) <span class="badge badge-success">{ $genre }}</span> @endforeach*@
+                            @foreach (var genre in Model.Genres)
+                            {<span class="badge badge-success">@genre.Name</span>}
                             <hr>
                             <!-- <p>Sharing buttons...  </p> -->
                             <!-- Social Button HTML -->
@@ -69,8 +71,7 @@
                             </a>
 
                             <hr>
-                            @*{!! $artist->bio !!}*@
-                            @Model.Bio
+                            @Html.Raw(HttpUtility.HtmlDecode(@Model.Bio))
                             <hr>
                         </div>
                     </div>
@@ -95,14 +96,13 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @*@foreach ($artist->songs as $song)
-                                            <tr>
-                                                <th width="7%" scope="row"><span class="fa fa-music"></span></th>
-                                                <td><a href="{ url('songs/'.$song->slug) }}">{ $song->name }}</a></td>
-                                                <td width="25%">{ date_format($song->created_at, "Y-m-d") }}</td>
-                                                <td width="25%">{ $song->album }}</td>
-                                            </tr>
-                                            @endforeach*@
+                                        @foreach (var songs in Model.Songs)
+                                        {<tr>
+                                            <th width="7%" scope="row"><span class="fa fa-music"></span></th>
+                                            <td><a href="@siteUrl/songs/@songs.Slug">@songs.Name</a></td>
+                                            <td width="25%">@songs.CreatedAt.ToString("yyyy-MM-dd")</td>
+                                            <td width="25%">@songs.Album</td>
+                                        </tr>}
                                     </tbody>
                                 </table>
                             </div>
