@@ -1,4 +1,5 @@
 ﻿using Songs_Manager.Data.Models;
+using Songs_Manager.Data.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,10 +16,30 @@ namespace Songs_Manager.Data.Services
             _context = context;
         }
 
-        public List<Song> GetTopSongs()
+        public List<SongVM> GetSongs()
         {
-            var _topSongs = _context.Songs.Take(10).ToList();
+            var _songs = _context.Songs.Select(s => new SongVM()
+            {
+                SongId = s.SongId,
+                Name = s.Name,
+                Slug = s.Slug,
+                Album = s.Album,
+                Artists = s.Artist_Songs.Select(a => a.Artists).ToList()
+            }).OrderByDescending(s => s.SongId).ToList();
 
+            return _songs;
+        }
+
+        public List<TopSongs> GetTopSongs()
+        {
+            var _topSongs = _context.Songs.Select(s => new TopSongs()
+            {
+                Name = s.Name,
+                Slug = s.Slug,
+                Album = s.Album,
+                Artists = s.Artist_Songs.Select(a => a.Artists).ToList()
+            }).Take(10).ToList();
+            
             return _topSongs;
         }
     }

@@ -1,6 +1,6 @@
-﻿@model List<TopSongs>
+﻿@model List<SongVM>
 @{
-    ViewData["Title"] = "Top Songs";
+    ViewData["Title"] = "Songs";
     string siteUrl = Context.Request.Scheme + System.Uri.SchemeDelimiter + Context.Request.Host.Value;
 }
 
@@ -27,14 +27,18 @@
                                 <tbody>
                                     @{ var iteration = 0; }
                                     @foreach (var song in Model)
-                                    {<tr>
-                                        <th width="7%" class="pl-4" scope="row">@{iteration++;}@iteration</th>
-                                        <td><a href="@siteUrl/songs/@song.Slug">@song.Name</a></td>
-                                        <td>@foreach (var artist in song.Artists){<a href="@siteUrl/artists/@artist.Slug">@artist.Name</a>}</td>
-                                        <td>@song.Album</td>
-                                    </tr>}
+                                    {
+                                        <tr>
+                                            <th width="7%" class="pl-4" scope="row">@{iteration++;}@iteration</th>
+                                            <td><a href="@siteUrl/songs/@song.Slug">@song.Name</a></td>
+                                            <td>@foreach (var artist in song.Artists)
+                                            {<a href="@siteUrl/artists/@artist.Slug">@artist.Name</a>}</td>
+                                            <td>@song.Album</td>
+                                        </tr>
+}
                                 </tbody>
                             </table>
+                            @*{ $songs->links('vendor.pagination.bootstrap-4-sm') }}*@
                         </div>
                     </div>
                 </div>
@@ -42,4 +46,3 @@
         </div>
     </div>
 </div>
-

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Songs_Manager.Data.Models;
 using Songs_Manager.Data.Services;
+using Songs_Manager.Data.ViewModels;
 
 namespace Songs_Manager.Controllers
 {
@@ -21,12 +22,14 @@ namespace Songs_Manager.Controllers
         // GET: Songs
         public ActionResult Index()
         {
-            return View();
+            List<SongVM> songs = _songService.GetSongs();
+            return View(songs);
         }
 
+        [Route("~/top_songs")]
         public ActionResult Top_Songs()
         {
-            List<Song> songs = _songService.GetTopSongs();
+            List<TopSongs> songs = _songService.GetTopSongs();
             return View(songs);
         }
 

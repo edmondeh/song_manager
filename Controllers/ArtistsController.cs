@@ -28,6 +28,7 @@ namespace Songs_Manager.Controllers
             return View(allArtists);
         }
 
+        [Route("/artists/{slug}")]
         public ActionResult Show(string slug)
         {
             ArtistVM artist = _artistService.GetArtist(slug);

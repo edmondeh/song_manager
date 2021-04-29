@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Song Lyrics from A to Z";
+    string siteUrl = Context.Request.Scheme + System.Uri.SchemeDelimiter + Context.Request.Host.Value;
 }
 
 <div class="container m-t-80 p-r-75 p-l-75">
@@ -87,7 +88,7 @@
                         <a href="{ url('artists/'.$artist->slug )}}" class="list-group-item list-group-item-action">{ $artist->name }}</a>
                         @endforeach*@
                     @foreach (var artist in Model)
-                    {<a href="Artists/@artist.Slug" class="list-group-item list-group-item-action">@artist.Name</a>}
+                    {<a href="@siteUrl/artists/@artist.Slug" class="list-group-item list-group-item-action">@artist.Name</a>}
                 </ul>
             </div>
         </div>
