@@ -20,9 +20,9 @@ namespace Songs_Manager.Controllers
         }
 
         // GET: Songs
-        public ActionResult Index()
+        public ActionResult Index(int? pageNumber)
         {
-            List<SongVM> songs = _songService.GetSongs();
+            List<SongVM> songs = _songService.GetSongs(pageNumber).Result;
             return View(songs);
         }
 

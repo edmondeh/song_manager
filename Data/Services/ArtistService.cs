@@ -32,7 +32,14 @@ namespace Songs_Manager.Data.Services
             return _artist;
         }
 
-        public List<Artist> GetAllArtists() => _context.Artists.ToList();
+        //public List<Artist> GetAllArtists() => _context.Artists.ToList();
+        public async Task<List<Artist>> GetAllArtists(int? pageNumber)
+        {
+            var artists = _context.Artists;
+
+            int pageSize = 10;
+            return await PaginatedList<Artist>.CreateAsync(artists.AsNoTracking(), pageNumber ?? 1, pageSize);
+        }
 
         public List<ArtistWithSongs> GetAllArtistsWithSongs()
         {

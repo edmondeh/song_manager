@@ -1,4 +1,4 @@
-﻿@model List<Songs_Manager.Data.ViewModels.TopTenArtists>
+﻿@model IndexVM
 
 @{
     ViewData["Title"] = "Song Lyrics from A to Z";
@@ -44,13 +44,24 @@
                         <table class="table table-hover">
                             <tbody>
                                 @*@foreach ($recently as $song)
+        <tr>
+            <th width="7%" class="pl-4" scope="row">{ $loop->iteration }}</th>
+            <td><a href="{ url('/songs/'.$song->slug) }}">{ $song->name }}</a></td>
+            <td>@foreach ($song->artist() as $artist) <a href="{ url('/artists/'.$artist->slug) }}">{ $artist->name }}</a> @endforeach</td>
+            <td>{ $song->album }}</td>
+        </tr>
+        @endforeach*@
+                                @{ var iteration = 0; }
+                                @foreach (var song in Model.RecentlySongs)
+                                {
                                     <tr>
-                                        <th width="7%" class="pl-4" scope="row">{ $loop->iteration }}</th>
-                                        <td><a href="{ url('/songs/'.$song->slug) }}">{ $song->name }}</a></td>
-                                        <td>@foreach ($song->artist() as $artist) <a href="{ url('/artists/'.$artist->slug) }}">{ $artist->name }}</a> @endforeach</td>
-                                        <td>{ $song->album }}</td>
+                                        <th width="7%" class="pl-4" scope="row">@{iteration++;}@iteration</th>
+                                        <td><a href="@siteUrl/songs/@song.Slug">@song.Name</a></td>
+                                        <td>@foreach (var artist in song.Artists)
+                                        {<a href="@siteUrl/artists/@artist.Slug">@artist.Name</a>}</td>
+                                        <td>@song.Album</td>
                                     </tr>
-                                    @endforeach*@
+}
                             </tbody>
                         </table>
                     </div>
@@ -84,10 +95,7 @@
                     Top 10 Artists
                 </div>
                 <ul class="list-group list-group-flush">
-                    @*@foreach ($top10artists as $artist)
-                        <a href="{ url('artists/'.$artist->slug )}}" class="list-group-item list-group-item-action">{ $artist->name }}</a>
-                        @endforeach*@
-                    @foreach (var artist in Model)
+                    @foreach (var artist in Model.TopTenArtists)
                     {<a href="@siteUrl/artists/@artist.Slug" class="list-group-item list-group-item-action">@artist.Name</a>}
                 </ul>
             </div>

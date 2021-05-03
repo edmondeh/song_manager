@@ -1,4 +1,4 @@
-﻿@model List<Artist>
+﻿@model PaginatedList<Artist>
 @{
     ViewData["Title"] = "All Artists";
     string siteUrl = Context.Request.Scheme + System.Uri.SchemeDelimiter + Context.Request.Host.Value;
@@ -24,30 +24,56 @@
                     @ViewData["Title"]
                 </div>
                 @*<div class="card-body">
-                    <div class="row">
-                        @foreach ($artists as $artist)
-                        <div class="mb-4 col-xs-6 col-md-4">
-                            <a href="{ url('artists/'.$artist->slug) }}">
-                                <img class="img-responsive img-thumbnail" src="{ asset($artist->getMedia('artist-images')->last()->getUrl()) ? asset($artist->getMedia('artist-images')->last()->getUrl()) : asset('storage/avatar/images.png') }}" alt="{ $artist->name }}">
-                            </a>
-                            <p><a href="{ url('artists/'.$artist->slug) }}">{ $artist->name }} </a></p>
-                        </div>
-                        @endforeach
-                    </div>
+            <div class="row">
+                @foreach ($artists as $artist)
+                <div class="mb-4 col-xs-6 col-md-4">
+                    <a href="{ url('artists/'.$artist->slug) }}">
+                        <img class="img-responsive img-thumbnail" src="{ asset($artist->getMedia('artist-images')->last()->getUrl()) ? asset($artist->getMedia('artist-images')->last()->getUrl()) : asset('storage/avatar/images.png') }}" alt="{ $artist->name }}">
+                    </a>
+                    <p><a href="{ url('artists/'.$artist->slug) }}">{ $artist->name }} </a></p>
                 </div>
-                { $artists->links('vendor.pagination.bootstrap-4-sm') }}*@
-                <div class="card-body">
-                    <div class="row">
-                        @foreach (var artists in Model)
-                        {<div class="mb-4 col-xs-6 col-md-4">
+                @endforeach
+            </div>
+        </div>
+        { $artists->links('vendor.pagination.bootstrap-4-sm') }}*@
+            <div class="card-body">
+                <div class="row">
+                    @foreach (var artists in Model)
+                    {<div class="mb-4 col-xs-6 col-md-4">
                             <a href="@siteUrl/artists/@artists.Slug">
                                 <img class="img-responsive img-thumbnail" src="@siteUrl/images/avatar.png" alt="@artists.Name">
                             </a>
                             <p><a href="@siteUrl/artists/@artists.Slug">@artists.Name </a></p>
                         </div>}
-                    </div>
                 </div>
-                Pagination
+                @{
+                    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+                    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+                }
+
+                <a asp-action="Index"
+                   asp-route-sortOrder="@ViewData["CurrentSort"]"
+                   asp-route-pageNumber="@(Model.PageIndex - 1)"
+                   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                   class="btn btn-default @prevDisabled">
+                    Previous
+                </a>
+                @for (var i = 1; i < Model.GetTotalPages + 1; i++)
+                {<a asp-action="Index"
+                    asp-route-sortOrder="@ViewData["CurrentSort"]"
+                    asp-route-pageNumber="@i"
+                    asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                    class="btn btn-default @(Model.PageIndex == i ? "disabled" : "" ) ">
+                        @i
+                    </a>}
+                <a asp-action="Index"
+                   asp-route-sortOrder="@ViewData["CurrentSort"]"
+                   asp-route-pageNumber="@(Model.PageIndex + 1)"
+                   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                   class="btn btn-default @nextDisabled">
+                    Next
+                </a>
+            </div>
             </div>
         </div>
     </div>

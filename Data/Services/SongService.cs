@@ -1,4 +1,5 @@
-﻿using Songs_Manager.Data.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using Songs_Manager.Data.Models;
 using Songs_Manager.Data.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -16,8 +17,10 @@ namespace Songs_Manager.Data.Services
             _context = context;
         }
 
-        public List<SongVM> GetSongs()
+        public async Task<List<SongVM>> GetSongs(int? pageNumber = null)
         {
+            //var songs = from s in _context.Songs
+            //               select s;
             var _songs = _context.Songs.Select(s => new SongVM()
             {
                 SongId = s.SongId,
@@ -25,9 +28,21 @@ namespace Songs_Manager.Data.Services
                 Slug = s.Slug,
                 Album = s.Album,
                 Artists = s.Artist_Songs.Select(a => a.Artists).ToList()
-            }).OrderByDescending(s => s.SongId).ToList();
+            }).OrderByDescending(s => s.SongId);
 
-            return _songs;
+            int pageSize = 10;
+            return await PaginatedList<SongVM>.CreateAsync(_songs.AsNoTracking(), pageNumber ?? 1, pageSize);
+
+            //var _songs = _context.Songs.Select(s => new SongVM()
+            //{
+            //    SongId = s.SongId,
+            //    Name = s.Name,
+            //    Slug = s.Slug,
+            //    Album = s.Album,
+            //    Artists = s.Artist_Songs.Select(a => a.Artists).ToList()
+            //}).OrderByDescending(s => s.SongId).ToList();
+
+            //return _songs;
         }
 
         public List<TopSongs> GetTopSongs()

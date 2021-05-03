@@ -21,10 +21,10 @@ namespace Songs_Manager.Controllers
         }
 
         // GET: Artists
-        public ActionResult Index()
+        public ActionResult Index(int? pageNumber)
         {
             //String.IsNullOrEmpty(slug);
-            List<Artist> allArtists = _artistService.GetAllArtists();
+            List<Artist> allArtists = _artistService.GetAllArtists(pageNumber).Result;
             return View(allArtists);
         }
 
