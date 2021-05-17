@@ -13,7 +13,7 @@ namespace Songs_Manager.Controllers
 {
     public class ArtistsController : Controller
     {
-        private ArtistService _artistService;
+        private readonly ArtistService _artistService;
 
         public ArtistsController(ArtistService artistService)
         {

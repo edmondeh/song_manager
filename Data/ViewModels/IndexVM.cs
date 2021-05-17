@@ -9,5 +9,6 @@ namespace Songs_Manager.Data.ViewModels
     {
         public List<TopTenArtists> TopTenArtists { get; set; }
         public List<SongVM> RecentlySongs { get; set; }
+        public List<FeaturedSongsVM> FeaturedSongs { get; set; }
     }
 }

@@ -360,104 +360,104 @@ namespace Songs_Manager.Data.Migrations
 
                     b.HasIndex("GenreId");
 
-                    b.ToTable("Artist_Genre");
+                    b.ToTable("Artist_Genres");
 
                     b.HasData(
                         new
                         {
                             Id = 1,
                             ArtistId = 1,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 1,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214)
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697)
                         },
                         new
                         {
                             Id = 2,
                             ArtistId = 1,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 2,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214)
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697)
                         },
                         new
                         {
                             Id = 3,
                             ArtistId = 2,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 2,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214)
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697)
                         },
                         new
                         {
                             Id = 4,
                             ArtistId = 3,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 2,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214)
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697)
                         },
                         new
                         {
                             Id = 5,
                             ArtistId = 3,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 3,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214)
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697)
                         },
                         new
                         {
                             Id = 6,
                             ArtistId = 4,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 5,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214)
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697)
                         },
                         new
                         {
                             Id = 7,
                             ArtistId = 4,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 6,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214)
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697)
                         },
                         new
                         {
                             Id = 8,
                             ArtistId = 5,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 5,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214)
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697)
                         },
                         new
                         {
                             Id = 9,
                             ArtistId = 5,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 6,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214)
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697)
                         },
                         new
                         {
                             Id = 10,
                             ArtistId = 6,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 5,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214)
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697)
                         },
                         new
                         {
                             Id = 11,
                             ArtistId = 6,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 6,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214)
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697)
                         },
                         new
                         {
                             Id = 12,
                             ArtistId = 7,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 9,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214)
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697)
                         });
                 });
 
@@ -655,7 +655,7 @@ namespace Songs_Manager.Data.Migrations
 
                     b.HasKey("GenreId");
 
-                    b.ToTable("Genre");
+                    b.ToTable("Genres");
 
                     b.HasData(
                         new
@@ -791,7 +791,7 @@ namespace Songs_Manager.Data.Migrations
                             SongId = 1,
                             Album = "1989 (2014)",
                             CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Featured = false,
+                            Featured = true,
                             LastUpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lyrics = "<br><div>Nice to meet you, where you been?<br>I could show you incredible things<br>Magic, madness, heaven, sin<br>Saw you there and I thought<br>Oh my God, look at that face<br>You look like my next mistake<br>Love's a game, wanna play?<br><br>New money, suit and tie<br>I can read you like a magazine<br>Ain't it funny, rumors fly<br>And I know you heard about me<br>So hey, let's be friends<br>I'm dying to see how this one ends<br>Grab your passport and my hand<br>I can make the bad guys good for a weekend<br><br>So it's gonna be forever<br>Or it's gonna go down in flames<br>You can tell me when it's over<br>If the high was worth the pain<br>Got a long list of ex-lovers<br>They'll tell you I'm insane<br>'Cause you know I love the players<br>And you love the game<br><br>'Cause we're young and we're reckless<br>We'll take this way too far<br>It'll leave you breathless<br>Or with a nasty scar<br>Got a long list of ex-lovers<br>They'll tell you I'm insane<br>But I've got a blank space, baby<br>And I'll write your name<br><br>Cherry lips, crystal skies<br>I could show you incredible things<br>Stolen kisses, pretty lies<br>You're the King, baby, I'm your Queen<br>Find out what you want<br>Be that girl for a month<br>Wait, the worst is yet to come, oh no<br><br>Screaming, crying, perfect storms<br>I can make all the tables turn<br>Rose garden filled with thorns<br>Keep you second guessing like<br>\"Oh my God, who is she ? \"<br>I get drunk on jealousy<br>But you'll come back each time you leave<br>'Cause, darling, I'm a nightmare dressed like a daydream<br><br>So it's gonna be forever<br>Or it's gonna go down in flames<br>You can tell me when it's over<br>If the high was worth the pain<br>Got a long list of ex-lovers<br>They'll tell you I'm insane<br>'Cause you know I love the players<br>And you love the game<br><br>'Cause we're young and we're reckless<br>We'll take this way too far<br>It'll leave you breathless<br>Or with a nasty scar<br>Got a long list of ex-lovers<br>They'll tell you I'm insane<br>But I've got a blank space, baby<br>And I'll write your name<br><br>Boys only want love if it's torture<br>Don't say I didn't say, I didn't warn ya<br>Boys only want love if it's torture<br>Don't say I didn't say, I didn't warn ya<br><br>So it's gonna be forever<br>Or it's gonna go down in flames<br>You can tell me when it's over<br>If the high was worth the pain<br>Got a long list of ex-lovers<br>They'll tell you I'm insane<br>'Cause you know I love the players<br>And you love the game<br><br>'Cause we're young and we're reckless<br>We'll take this way too far<br>It'll leave you breathless<br>Or with a nasty scar<br>Got a long list of ex-lovers<br>They'll tell you I'm insane<br>But I've got a blank space, baby<br>And I'll write your name</div>",
                             Name = "Blank Space",
@@ -839,7 +839,7 @@ namespace Songs_Manager.Data.Migrations
                             SongId = 5,
                             Album = "Unbroken (2011)",
                             CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Featured = false,
+                            Featured = true,
                             LastUpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lyrics = "<br><div>The day I first met you<br>You told me you'd never fall in love<br>But now that I get you<br>I know fear is what it really was<br><br>Now here we are<br>So close yet so far<br>Haven't I passed the test?<br>When will you realize<br>Baby, I'm not like the rest?<br><br>Don't wanna break your heart<br>Wanna give your heart a break<br>I know you're scared it's wrong<br>Like you might make a mistake<br>There's just one life to live<br>And there's no time to wait, to wait<br>So let me give your heart a break, give your heart a break<br>Let me give your heart a break, your heart a break<br>Oh yeah, yeah<br><br>On Sunday you went home alone<br>There were tears in your eyes<br>I called your cell phone, my love<br>But you did not reply<br><br>The world is ours. If we want it<br>We can take it if you just take my hand<br>There's no turning back now<br>Baby, try to understand<br><br>Don't wanna break your heart<br>Wanna give your heart a break<br>I know you're scared it's wrong<br>Like you might make a mistake<br>There's just one life to live<br>And there's no time to wait, to wait<br>So let me give your heart a break, give your heart a break<br>Let me give your heart a break, your heart a break<br>There's just so much you can take<br>Give your heart a break<br>Let me give your heart a break, your heart a break<br>Oh yeah, yeah<br><br>When your lips are on my lips<br>Then our hearts beat as one<br>But you slip out of my fingertips<br>Every time you run, whoa-oh-whoa-oh-oh<br><br>Don't wanna break your heart<br>Wanna give your heart a break<br>I know you're scared it's wrong<br>Like you might make a mistake<br>There's just one life to live<br>And there's no time to wait, to wait<br>So let me give your heart a break<br><br>'Cause you've been hurt before<br>I can see it in your eyes<br>You try to smile it away<br>Some things you can't disguise<br>Don't wanna break your heart<br>Baby, I can ease the ache, the ache<br>So let me give your heart a break, give your heart a break<br>Let me give your heart a break, your heart a break<br>There's just so much you can take<br>Give your heart a break<br>Let me give your heart a break, your heart a break<br>Oh yeah, yeah<br><br>The day I first met you<br>You told me you'd never fall in love</div>",
                             Name = "Give Your Heart a Break",
@@ -875,7 +875,7 @@ namespace Songs_Manager.Data.Migrations
                             SongId = 8,
                             Album = "Teenage Dream",
                             CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Featured = false,
+                            Featured = true,
                             LastUpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lyrics = "Do You Ever Feel Like A Plastic Bag<br> Drifting Through The Wind, Wanting To Start Again?<br> Do You Ever Feel, Feel So Paper-thin<br> Like A House Of Cards, One Blow From Caving In?<br> <br> Do You Ever Feel Already Buried Deep<br> Six Feet Under Screams But No One Seems To Hear A Thing<br> Do You Know That There's Still A Chance For You<br> 'Cause There's A Spark In You?<br> <br> You Just Gotta Ignite The Light And Let It Shine<br> Just Own The Night Like The 4th Of July<br> <br> 'Cause, Baby, You're A Firework<br> Come On, Show 'em What You're Worth<br> Make 'em Go, \"Ah, Ah, Ah\"<br> As You Shoot Across The Sky<br> <br> Baby, You're A Firework<br> Come On, Let Your Colors Burst<br> Make 'em Go, \"Ah, Ah, Ah\"<br> You're Gonna Leave 'em All In Awe, Awe, Awe<br> <br> You Don't Have To Feel Like A Wasted Space<br> You're Original, Cannot Be Replaced<br> If You Only Knew What The Future Holds<br> After A Hurricane Comes A Rainbow<br> <br> Maybe A Reason Why All The Doors Are Closed<br> So You Could Open One That Leads You To The Perfect Road<br> Like A Lightning Bolt Your Heart Will Glow<br> And When It's Time You'll Know<br> <br> You Just Gotta Ignite The Light And Let It Shine<br> Just Own The Night Like The 4th Of July<br> <br> 'Cause, Baby, You're A Firework<br> Come On, Show 'em What You're Worth<br> Make 'em Go, \"Ah, Ah, Ah\"<br> As You Shoot Across The Sky<br> <br> Baby, You're A Firework<br> Come On, Let Your Colors Burst<br> Make 'em Go, \"Ah, Ah, Ah\"<br> You're Gonna Leave 'em All In Awe, Awe, Awe<br> <br> Boom, Boom, Boom<br> Even Brighter Than The Moon, Moon, Moon<br> It's Always Been Inside Of You, You, You<br> And Now It's Time To Let It Through, -ough, -ough<br> <br> 'Cause, Baby, You're A Firework<br> Come On, Show 'em What You're Worth<br> Make 'em Go, \"Ah, Ah, Ah\"<br> As You Shoot Across The Sky<br> <br> Baby, You're A Firework<br> Come On, Let Your Colors Burst<br> Make 'em Go, \"Ah, Ah, Ah\"<br> You're Gonna Leave 'em All In Awe, Awe, Awe<br> <br> Boom, Boom, Boom<br> Even Brighter Than The Moon, Moon, Moon<br> Boom, Boom, Boom<br> Even Brighter Than The Moon, Moon, Moon <br>",
                             Name = "Firework",
@@ -899,7 +899,7 @@ namespace Songs_Manager.Data.Migrations
                             SongId = 10,
                             Album = "Recovery (2010)",
                             CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Featured = false,
+                            Featured = true,
                             LastUpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lyrics = "I'm not afraid (I'm not afraid)<br>To take a stand (to take a stand)<br>Everybody (everybody)<br>Come take my hand (come take my hand)<br>We'll walk this road together, through the storm<br>Whatever weather, cold or warm<br>Just letting you know that you're not alone<br>Holler if you feel like you've been down the same road (same road)<br><br>Yeah, it's been a ride<br>I guess I had to, go to that place, to get to this one<br>Now some of you, might still be in that place<br>If you're trying to get out, just follow me<br>I'll get you there<br><br>You can try and read my lyrics off of this paper before I lay 'em<br>But you won't take the sting out these words before I say 'em<br>'Cause ain't no way I'mma let you stop me from causing mayhem<br>When I say I'mma do something I do it<br>I don't give a damn what you think<br>I'm doing this for me, so fuck the world<br>Feed it beans, it's gassed up, if it thinks it's stopping me<br>I'mma be what I set out to be, without a doubt undoubtedly<br>And all those who look down on me I'm tearing down your balcony<br>No ifs, ands or buts, don't try to ask him why or how can he<br>From \"Infinite\" down to the last \"Relapse\" album<br>He's still shitting, whether he's on salary paid hourly<br>Until he bows out or he shits his bowels out of him<br>Whichever comes first, for better or worse<br>He's married to the game, like a \"fuck you\" for Christmas<br>His gift is a curse, forget the Earth, he's got the urge<br>To pull his dick from the dirt, and fuck the whole universe<br><br>I'm not afraid (I'm not afraid)<br>To take a stand (to take a stand)<br>Everybody (everybody)<br>Come take my hand (come take my hand)<br>We'll walk this road together, through the storm<br>Whatever weather, cold or warm<br>Just letting you know that you're not alone<br>Holler if you feel like you've been down the same road (same road)<br><br>Okay quit playing with the scissors and shit, and cut the crap<br>I shouldn't have to rhyme these words in a rhythm for you to know it's a rap<br>You said you was king, you lied through your teeth<br>For that fuck your feelings<br>Instead of getting crowned you're getting capped<br>And to the fans, I'll never let you down again, I'm back<br>I promise to never go back on that promise<br>In fact let's be honest<br>That last \"Relapse\" CD was \"ehh\"<br>Perhaps I ran them accents into the ground<br>Relax, I ain't going back to that now<br>All I'm trying to say is get back, click-clack, blow<br>'Cause I ain't playing around<br>There's a game called circle and I don't know how, I'm way too up to back down<br>But I think I'm still trying to figure this crap out<br>Thought I had it mapped out but I guess I didn't, this fucking black cloud<br>Still follows me around but it's time to exorcise these demons<br>These motherfuckers are doing jumping jacks now!<br><br>I'm not afraid (I'm not afraid)<br>To take a stand (to take a stand)<br>Everybody (everybody)<br>Come take my hand (come take my hand)<br>We'll walk this road together, through the storm<br>Whatever weather, cold or warm<br>Just letting you know that you're not alone<br>Holler if you feel like you've been down the same road (same road)<br><br>And I just can't keep living this way<br>So starting today, I'm breaking out of this cage<br>I'm standing up, I'mma face my demons<br>I'm manning up, I'mma hold my ground<br>I've had enough, now I'm so fed up<br>Time to put my life back together right now! (now)<br><br>It was my decision to get clean, I did it for me<br>Admittedly, I probably did it subliminally<br>For you, so I could come back a brand-new me you helped see me through<br>And don't even realize what you did, 'cause believe me you<br>I've been through the wringer, but they could do little to the middle finger<br>I think I got a tear in my eye, I feel like the king of<br>My world, haters can make like bees with no stingers<br>And drop dead, no more beef lingers<br>No more drama from now on, I wanna promise<br>To focus solely on handling my responsibilities as a father<br>So I solemnly swear to always treat this roof, like my daughters<br>And raise it, you couldn't lift a single shingle on it!<br>'Cause the way I feel, I'm strong enough to go to the club<br>Or the corner pub, and lift the whole liquor counter up<br>'Cause I'm raising the bar<br>I'd shoot for the moon but I'm too busy gazing at stars<br>I feel amazing and I'm...<br><br>I'm not afraid (I'm not afraid)<br>To take a stand (to take a stand)<br>Everybody (everybody)<br>Come take my hand (come take my hand)<br>We'll walk this road together, through the storm<br>Whatever weather, cold or warm<br>Just letting you know that you're not alone<br>Holler if you feel like you've been down the same road (same road)",
                             Name = "Not Afraid",
@@ -935,7 +935,7 @@ namespace Songs_Manager.Data.Migrations
                             SongId = 13,
                             Album = "The Massacre (2005)",
                             CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Featured = false,
+                            Featured = true,
                             LastUpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lyrics = "<i>[Intro: 50 Cent]</i><br>Yeah...<br>Uh huh<br>So seductive<br><br><i>[Chorus: 50 Cent &amp; Olivia]</i><br><i>[50 Cent]</i><br>I'll take you to the candy shop<br>I'll let you lick the lollipop<br>Go 'head girl, don't you stop<br>Keep going 'til you hit the spot (woah)<br><i>[Olivia]</i><br>I'll take you to the candy shop<br>Boy one taste of what I got<br>I'll have you spending all you got<br>Keep going 'til you hit the spot (woah)<br><br><i>[Verse 1: 50 Cent]</i><br>You can have it your way, how do you want it<br>You gon' back that thing up or should i push up on it<br>Temperature rising, okay lets go to the next level<br>Dance floor jam packed, hot as a teakettle<br>I'll break it down for you now, baby it's simple<br>If you be a nympho, I'll be a nympho<br>In the hotel or in the back of the rental<br>On the beach or in the park, it's whatever you into<br>Got the magic stick, I'm the love doctor<br>Have your friends teasing you 'bout how sprung I gotcha<br>Wanna show me how you work it baby, no problem<br>Get on top then get to bouncing round like a low rider<br>I'm a seasons vet when it come to this shit<br>After you work up a sweat you can play with the stick<br>I'm trying to explain baby the best way I can<br>I melt in your mouth girl, not in your hands (ha ha)<br><br><i>[Chorus]</i><br><br><i>[Bridge: 50 Cent &amp; Olivia]</i><br>Girl what we do (what we do)<br>And where we do (and where we do)<br>The things we do (things we do)<br>Are just between me and you (oh yeah)<br><br><i>[Verse 2: 50 Cent]</i><br>Give it to me baby, nice and slow<br>Climb on top, ride like you in the rodeo<br>You ain't never heard a sound like this before<br>Cause I ain't never put it down like this before<br>Soon as I come through the door she get to pulling on my zipper<br>It's like it's a race who can get undressed quicker<br>Isn't it ironic how erotic it is to watch em in thongs<br>Had me thinking 'bout that ass after I'm gone<br>I touch the right spot at the right time<br>Lights on or lights off, she like it from behind<br>So seductive, you should see the way she wind<br>Her hips in slow-mo on the floor when we grind<br>As Long as she ain't stopping, homie I ain't stopping<br>Dripping wet with sweat man its on and popping<br>All my champagne campaign, bottle after bottle its on<br>And we gon' sip 'til every bubble in every bottle is gone<br><br><i>[Chorus 2x]</i>",
                             Name = "Candy Shop",
@@ -947,7 +947,7 @@ namespace Songs_Manager.Data.Migrations
                             SongId = 14,
                             Album = "Ceinture Noire (2018)",
                             CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Featured = false,
+                            Featured = true,
                             LastUpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lyrics = "<div>Corazón<br><br>Corazón, dis-moi pourquoi tu fuis ; pour toi, qu'est-ce que je suis ?<br>Mi corazón, dis-moi combien tu m'aimes, dis-moi ce que j'ai fait<br>Mi corazón, dis-moi où est-ce que tu vas, non, non, ne t'en va pas<br>Mi corazón, corazón, corazón<br><br>J'ai pas la prétention de te demander ta main<br>J'ai vu ton visage apparaître dans les flammes<br>J'préfère encore te contempler tout comme un gamin<br>Car tu es l'esprit du Malin<br>Avec toi, impossible de savoir à quoi s'attendre<br>Tu changes de peau, tu glisses dans des draps de satin<br>J'aurais préféré ne jamais croiser ton chemin<br>Oooh<br><br>(Corazón) Un jour, tu me dis des mots doux, tu m'fais savoir qu'on est intime<br>(Corazón) Un jour, tu me laisse dans le doute et tu fais de moi ton ennemi<br>(Corazón) Je n'sais plus à quoi m'attendre, dis-moi c'que je n'ai pas compris<br>(Corazón) Accorde-moi de ton temps, je ne t'ai demandé qu'une nuit<br><br>Corazón, dis-moi pourquoi tu fuis ; pour toi, qu'est-ce que je suis ?<br>Mi corazón, dis-moi combien tu m'aimes, dis-moi ce que j'ai fait<br>Mi corazón, dis-moi où est-ce que tu vas, non, non, ne t'en va pas<br>Mi corazón, corazón, corazón<br><br>On m'a dit que tu dévorais tous les hommes<br>Et, d'après la rumeur, tu ne souris jamais<br>Tu prendras tout de moi, tu m'laisseras seul, enchaîné<br>Est-ce que j'ai tort ? Non, je savais<br>J'avance vers toi, les courbes de ton corps m’assomment<br>Tu diras : \"J'ai récolté tout ce que j'ai semé\"<br>Attends deux minutes, j'ai déjà vécu la scène<br><br>(Corazón) Un jour, tu me dis des mots doux, tu m'fais savoir qu'on est intime<br>(Corazón) Un jour, tu me laisse dans le doute et tu fais de moi ton ennemi<br>(Corazón) Je n'sais plus à quoi m'attendre, dis-moi c'que je n'ai pas compris<br>(Corazón) Accorde-moi de ton temps, je ne t'ai demandé qu'une nuit<br><br>Corazón, dis-moi pourquoi tu fuis ; pour toi, qu'est-ce que je suis ?<br>Mi corazón, dis-moi combien tu m'aimes, dis-moi ce que j'ai fait<br>Mi corazón, dis-moi où est-ce que tu vas, non, non, ne t'en va pas<br>Mi corazón, corazón, corazón<br><br>Et tu es rentrée dans ma tête, ce jour-là, comme une maladie<br>Et, ce que tu m'as dit, je l'ai en mélodie<br>Et tu es rentrée dans ma tête, ce jour-là, comme une maladie<br>Et, ce que tu m'as dit, je l'ai en mélodie<br>Et tu es rentrée dans ma tête, ce jour-là, comme une maladie<br>Et, ce que tu m'as dit, je l'ai en mélodie<br>Et tu es rentrée dans ma tête, ce jour-là, comme une maladie<br>Et, ce que tu m'as dit, je l'ai en mélodie<br><br>Corazón, dis-moi pourquoi tu fuis ; pour toi, qu'est-ce que je suis ?<br>Mi corazón, dis-moi combien tu m'aimes, dis-moi ce que j'ai fait<br>Mi corazón, dis-moi où est-ce que tu vas, non, non, ne t'en va pas<br>Mi corazón, corazón<br>Corazón, dis-moi pourquoi tu fuis ; pour toi, qu'est-ce que je suis ?<br>Mi corazón, dis-moi combien tu m'aimes, dis-moi ce que j'ai fait<br>Mi corazón, dis-moi où est-ce que tu vas, non, non, ne t'en va pas<br>Mi corazón, corazón, corazón<br><br>Corazón<br>Corazón<br>Corazón</div>",
                             Name = "Corazon",
@@ -959,7 +959,7 @@ namespace Songs_Manager.Data.Migrations
                             SongId = 15,
                             Album = "No Album",
                             CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Featured = false,
+                            Featured = true,
                             LastUpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Lyrics = "<br><div></div><div><p>[Dafina:]<br>You got me up all night.<br>me lotë n'sy une tash<br>po t'lutna me'u kthy prap,<br>ti nuk ktheh'sh m'rapsht.<br>You got me up all night.<br>You got me up all night.<br>me pas edhe nji rastë,<br>unë me ty me u kan bashkë.<br><br>[REF.:]<br>E lule-lule, e lule-lule,<br>unë për ty t'gjitha ti jap.<br>e ndalu pak, e ndalu pak,<br>se zemra ime je ti vetem.<br>E lule-lu, e lule-lu<br>E lule-lule, maca-maca<br>Se unë për ty, se unë për ty<br>Unë për ty veç ndaloj pak.<br>E lule-lu, e lule-lu<br>e lule-lule-lule-lule-lule-lu<br>E lule-lu, e lule-lu<br>e lule-lule-lule-lule-lule-lu<br><br>[Lumi:]<br>Po get u kon e shkrume<br>K'to sene s'kan t'pagume<br>Je munu me ik amo prap..<br>Ti je kthy te une<br>Gjeste t'pa menume<br>Ç'a ka ndodh dje e harrume<br>Sot e kalume<br>Deren e ki qel<br>Edhe krevetin me lule<br><br>[Dafina:]<br>E lule lule...<br><br>[Lumi:]<br>Prap ma ngule<br><br>[Dafina:]<br>E lule lulee<br><br>[Lumi:]<br>Prap ma ngule<br><br>[Dafina:]<br>Sa t'kom daaaasht<br><br>[Lumi:]<br>Me and my girl për jetë<br>All eyes on us, na s'i kqyrim tjert<br>Moj e bukura more<br>Ma e bukura ti je<br>K'si dashnie ka veq njëherë n'jetë.<br>...<br><br>[Dafina:]<br>E lule-lu, e lule-lu<br>E lule-lule, maca-maca<br>Se une per ty, se une per ty<br>Une per ty veç ndaloj pak<br>E lule-lu, e lule-lu<br>e lule-lule-lule-lule-lule-lu<br>E lule-lu, e lule-lu<br>e lule-lule-lule-lule-lule-lu</p></div>",
                             Name = "Lule Lule  (Feat. Lumi B)",
@@ -1011,223 +1011,223 @@ namespace Songs_Manager.Data.Migrations
 
                     b.HasIndex("SongId");
 
-                    b.ToTable("Song_Genre");
+                    b.ToTable("Song_Genres");
 
                     b.HasData(
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 1,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 1
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 6,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 1
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 6,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 2
                         },
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 9,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 3
                         },
                         new
                         {
                             Id = 5,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 6,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 4
                         },
                         new
                         {
                             Id = 6,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 8,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 4
                         },
                         new
                         {
                             Id = 7,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 2,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 5
                         },
                         new
                         {
                             Id = 8,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 4,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 5
                         },
                         new
                         {
                             Id = 9,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 1,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 6
                         },
                         new
                         {
                             Id = 10,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 4,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 6
                         },
                         new
                         {
                             Id = 11,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 2,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 7
                         },
                         new
                         {
                             Id = 12,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 4,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 7
                         },
                         new
                         {
                             Id = 13,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 6,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 8
                         },
                         new
                         {
                             Id = 14,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 7,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 8
                         },
                         new
                         {
                             Id = 15,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 2,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 9
                         },
                         new
                         {
                             Id = 16,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 3,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 9
                         },
                         new
                         {
                             Id = 17,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 5,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 10
                         },
                         new
                         {
                             Id = 18,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 6,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 10
                         },
                         new
                         {
                             Id = 19,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 5,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 11
                         },
                         new
                         {
                             Id = 20,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 6,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 11
                         },
                         new
                         {
                             Id = 21,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 5,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 12
                         },
                         new
                         {
                             Id = 22,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 6,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 12
                         },
                         new
                         {
                             Id = 23,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 5,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 13
                         },
                         new
                         {
                             Id = 24,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 6,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 13
                         },
                         new
                         {
                             Id = 25,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 6,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 14
                         },
                         new
                         {
                             Id = 26,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 7,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 15
                         },
                         new
                         {
                             Id = 27,
-                            CreatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             GenreId = 7,
-                            LastUpdatedAt = new DateTime(2021, 4, 28, 18, 4, 31, 401, DateTimeKind.Local).AddTicks(4214),
+                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
                             SongId = 16
                         });
                 });
@@ -1286,13 +1286,13 @@ namespace Songs_Manager.Data.Migrations
             modelBuilder.Entity("Songs_Manager.Data.Models.Artist_Genre", b =>
                 {
                     b.HasOne("Songs_Manager.Data.Models.Artist", "Artists")
-                        .WithMany()
+                        .WithMany("Artist_Genres")
                         .HasForeignKey("ArtistId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Songs_Manager.Data.Models.Genre", "Genre")
-                        .WithMany()
+                    b.HasOne("Songs_Manager.Data.Models.Genre", "Genres")
+                        .WithMany("Artist_Genres")
                         .HasForeignKey("GenreId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -1316,13 +1316,13 @@ namespace Songs_Manager.Data.Migrations
             modelBuilder.Entity("Songs_Manager.Data.Models.Song_Genre", b =>
                 {
                     b.HasOne("Songs_Manager.Data.Models.Genre", "Genre")
-                        .WithMany()
+                        .WithMany("Song_Genres")
                         .HasForeignKey("GenreId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Songs_Manager.Data.Models.Song", "Song")
-                        .WithMany()
+                        .WithMany("Song_Genres")
                         .HasForeignKey("SongId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

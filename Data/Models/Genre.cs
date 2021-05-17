@@ -11,6 +11,8 @@ namespace Songs_Manager.Data.Models
         public string Name { get; set; }
         public string Slug { get; set; }
         public string Info { get; set; }
+        public List<Song_Genre> Song_Genres { get; set; }
+        public List<Artist_Genre> Artist_Genres { get; set; }
 
         public DateTime CreatedAt { get; set; }
         public string CreatedBy { get; set; }

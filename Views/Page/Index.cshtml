@@ -10,10 +10,11 @@
         <div class="col-9">
             <div class="jumbotron">
                 <h1 class="display-4">Search for lyrics!</h1>
-                <p class="lead">@{ var sv = DateTime.Now; } @sv Search for perfect lyrics by great Artists!</p>
-                <form class="form-inline my-2 my-lg-0" method="POST" action="/search">
+                <p class="lead">Search for perfect lyrics by great Artists!</p>
+                @*<form class="form-inline my-2 my-lg-0" method="POST" action="/search">*@
+                <form class="form-inline my-2 my-lg-0" asp-controller="search" asp-action="Index">
                     @*{ csrf_field() }}*@
-                    <input class="form-control col-6 mr-sm-2" name="q" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control col-6 mr-sm-2" name="SearchString" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
@@ -32,6 +33,15 @@
                                 <p class="text-center"><a href="{ url('songs/'.$song->slug) }}" class="song-link">"{ $song->name }}"</a></p>
                             </div>
                             @endforeach*@
+
+                        @foreach (var featuredSong in Model.FeaturedSongs) {
+                        <div class="col-xs-6 col-md-4">
+                            <a href="@siteUrl/songs/@featuredSong.Slug">
+                                <img class="img-responsive img-thumbnail" src="@siteUrl/images/avatar.png" alt="@foreach (var artist in featuredSong.Artists) { @artist.Name }">
+                                </a>@foreach (var artist in featuredSong.Artists)
+                                {<p class="text-center my-0"><a href="@siteUrl/artists/@artist.Slug">@artist.Name</a></p>}
+                                <p class="text-center"><a href="@siteUrl/songs/@featuredSong.Slug" class="song-link">@featuredSong.Name</a></p>
+                            </div>}
                     </div>
                 </div>
             </div>
@@ -43,14 +53,6 @@
                     <div class="col1">
                         <table class="table table-hover">
                             <tbody>
-                                @*@foreach ($recently as $song)
-        <tr>
-            <th width="7%" class="pl-4" scope="row">{ $loop->iteration }}</th>
-            <td><a href="{ url('/songs/'.$song->slug) }}">{ $song->name }}</a></td>
-            <td>@foreach ($song->artist() as $artist) <a href="{ url('/artists/'.$artist->slug) }}">{ $artist->name }}</a> @endforeach</td>
-            <td>{ $song->album }}</td>
-        </tr>
-        @endforeach*@
                                 @{ var iteration = 0; }
                                 @foreach (var song in Model.RecentlySongs)
                                 {

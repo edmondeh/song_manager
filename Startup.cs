@@ -41,6 +41,8 @@ namespace Songs_Manager
             //Configure the Services
             services.AddTransient<ArtistService>();
             services.AddTransient<SongService>();
+            services.AddTransient<GenreService>();
+            services.AddTransient<SearchService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

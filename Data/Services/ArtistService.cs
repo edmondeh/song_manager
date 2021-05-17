@@ -41,9 +41,9 @@ namespace Songs_Manager.Data.Services
             return await PaginatedList<Artist>.CreateAsync(artists.AsNoTracking(), pageNumber ?? 1, pageSize);
         }
 
-        public List<ArtistWithSongs> GetAllArtistsWithSongs()
+        public List<ArtistWithSongsVM> GetAllArtistsWithSongs()
         {
-            var _artistWithSongs = _context.Artists.Select(artist => new ArtistWithSongs()
+            var _artistWithSongs = _context.Artists.Select(artist => new ArtistWithSongsVM()
             {
                 Name = artist.Name,
                 Slug = artist.Slug,

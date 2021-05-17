@@ -12,20 +12,21 @@ namespace Songs_Manager.Controllers
 {
     public class SongsController : Controller
     {
-        private SongService _songService;
+        private readonly SongService _songService;
 
         public SongsController(SongService songService)
         {
             _songService = songService;
         }
 
-        // GET: Songs
+        // GET: songs
         public ActionResult Index(int? pageNumber)
         {
             List<SongVM> songs = _songService.GetSongs(pageNumber).Result;
             return View(songs);
         }
 
+        // GET: top_songs
         [Route("~/top_songs")]
         public ActionResult Top_Songs()
         {
@@ -33,79 +34,16 @@ namespace Songs_Manager.Controllers
             return View(songs);
         }
 
-        // GET: Songs/Details/5
-        public ActionResult Details(int id)
+        // GET: songs/slug
+        [Route("/songs/{slug}")]
+        public ActionResult Show(string slug)
         {
-            return View();
-        }
-
-        // GET: Songs/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Songs/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
+            var model = new SongsVM
             {
-                // TODO: Add insert logic here
-
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: Songs/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: Songs/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
-
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: Songs/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: Songs/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+                Song = _songService.GetSong(slug),
+                TopSongsInArtist = _songService.GetTopSongsInArtist(slug)
+            };
+            return View(model);
         }
     }
 }

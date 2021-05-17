@@ -1,0 +1,7 @@
+﻿@model List<Genre>
+@{
+    ViewData["Title"] = "GetGenres";
+    string siteUrl = Context.Request.Scheme + System.Uri.SchemeDelimiter + Context.Request.Host.Value;
+}
+@foreach (var genre in Model)
+{ <a class="dropdown-item" href="@siteUrl/genres/@genre.Slug">@genre.Name</a> }

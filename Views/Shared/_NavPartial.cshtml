@@ -51,7 +51,9 @@
                         Genres
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="@siteUrl/genres">Genres</a>
+                        @await Component.InvokeAsync("GetGenres")
+                        @*@foreach(var genre in Model.GetGenres())
+                        { <a class="dropdown-item" href="@siteUrl/genres/@genre.Slug">@genre.Name</a> }*@
                         <!-- <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Something else here</a> -->
                     </div>

@@ -469,3 +469,13 @@ D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\net
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Artists\Show.cshtml.g.cs
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Songs\Top_songs.cshtml.g.cs
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Songs\Index.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Page\AboutUs.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Page\Feed.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Page\OurVision.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Page\Privacy.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Page\Sitemap.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Page\TermAndConditions.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\GetGenres\Default.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Genres\Index.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Songs\Show.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Search\Index.cshtml.g.cs

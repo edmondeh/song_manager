@@ -26,6 +26,9 @@ namespace Songs_Manager.Data
         public DbSet<Artist> Artists { get; set; }
         public DbSet<Song> Songs { get; set; }
         public DbSet<Artist_Song> Artist_Songs { get; set; }
+        public DbSet<Genre> Genres { get; set; }
+        public DbSet<Song_Genre> Song_Genres { get; set; }
+        public DbSet<Artist_Genre> Artist_Genres { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -37,11 +40,28 @@ namespace Songs_Manager.Data
                 .HasOne(b => b.Artists)
                 .WithMany(ba => ba.Artist_Songs)
                 .HasForeignKey(bi => bi.ArtistId);
-
             modelBuilder.Entity<Artist_Song>()
               .HasOne(b => b.Songs)
               .WithMany(ba => ba.Artist_Songs)
               .HasForeignKey(bi => bi.SongId);
+
+            modelBuilder.Entity<Song_Genre>()
+              .HasOne(b => b.Song)
+              .WithMany(ba => ba.Song_Genres)
+              .HasForeignKey(bi => bi.SongId);
+            modelBuilder.Entity<Song_Genre>()
+              .HasOne(b => b.Genre)
+              .WithMany(ba => ba.Song_Genres)
+              .HasForeignKey(bi => bi.GenreId);
+
+            modelBuilder.Entity<Artist_Genre>()
+              .HasOne(b => b.Artists)
+              .WithMany(ba => ba.Artist_Genres)
+              .HasForeignKey(bi => bi.ArtistId);
+            modelBuilder.Entity<Artist_Genre>()
+              .HasOne(b => b.Genres)
+              .WithMany(ba => ba.Artist_Genres)
+              .HasForeignKey(bi => bi.GenreId);
         }
 
         public override int SaveChanges(bool acceptAllChangesOnSuccess)

@@ -23,7 +23,7 @@ namespace Songs_Manager.Data.ViewModels
         public DateTime CreatedAt { get; set; }
     }
 
-    public class ArtistWithSongs
+    public class ArtistWithSongsVM
     {
         public string Name { get; set; }
         public string Slug { get; set; }

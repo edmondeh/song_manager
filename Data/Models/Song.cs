@@ -20,6 +20,7 @@ namespace Songs_Manager.Data.Models
         public string Lyrics { get; set; }
         public string UserName { get; set; }
         public List<Artist_Song> Artist_Songs { get; set; }
+        public List<Song_Genre> Song_Genres { get; set; }
 
         public DateTime CreatedAt { get; set; }
         public string CreatedBy { get; set; }
