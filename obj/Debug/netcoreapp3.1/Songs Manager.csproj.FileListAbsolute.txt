@@ -1,6 +1,6 @@
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\appsettings.json
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\libman.json
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Songs Manager.StaticWebAssets.xml
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Songs Manager.exe
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Songs Manager.deps.json
@@ -8,152 +8,6 @@ D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\net
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Songs Manager.runtimeconfig.dev.json
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Songs Manager.dll
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Songs Manager.pdb
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Songs Manager.Views.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Songs Manager.Views.pdb
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.csprojAssemblyReference.cache
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.RazorAssemblyInfo.cache
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.RazorAssemblyInfo.cs
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.AssemblyInfoInputs.cache
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.AssemblyInfo.cs
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.TagHelpers.input.cache
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.TagHelpers.output.cache
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.RazorCoreGenerate.cache
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.RazorTargetAssemblyInfo.cache
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.RazorTargetAssemblyInfo.cs
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.Views.pdb
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.csproj.CopyComplete
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\staticwebassets\Songs Manager.StaticWebAssets.Manifest.cache
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\staticwebassets\Songs Manager.StaticWebAssets.xml
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.pdb
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.genruntimeconfig.cache
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Page\Index.cshtml.g.cs
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\libman.json
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutOld.cshtml.g.cs
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Antiforgery.dll
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Cookies.dll
@@ -270,7 +124,6 @@ D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\net
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\refs\System.Buffers.dll
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\refs\System.Collections.Concurrent.dll
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\refs\System.Collections.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\refs\System.Collections.Immutable.dll
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\refs\System.Collections.NonGeneric.dll
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\refs\System.Collections.Specialized.dll
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\refs\System.ComponentModel.Annotations.dll
@@ -287,7 +140,6 @@ D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\net
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\refs\System.Data.dll
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Contracts.dll
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Debug.dll
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.DiagnosticSource.dll
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.EventLog.dll
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.FileVersionInfo.dll
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\refs\System.Diagnostics.Process.dll
@@ -418,15 +270,148 @@ D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\net
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\refs\System.Xml.XPath.dll
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\refs\System.Xml.XPath.XDocument.dll
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\refs\WindowsBase.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Songs Manager.Views.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Songs Manager.Views.pdb
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.AssemblyInfoInputs.cache
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.AssemblyInfo.cs
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.csproj.CoreCompileInputs.cache
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.MvcApplicationPartsAssemblyInfo.cs
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.MvcApplicationPartsAssemblyInfo.cache
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_NavPartial.cshtml.g.cs
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_FooterPartial.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.RazorAssemblyInfo.cache
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.RazorAssemblyInfo.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\staticwebassets\Songs Manager.StaticWebAssets.Manifest.cache
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\staticwebassets\Songs Manager.StaticWebAssets.xml
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\scopedcss\bundle\Songs Manager.styles.css
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.TagHelpers.input.cache
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.TagHelpers.output.cache
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.RazorCoreGenerate.cache
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\AccessDenied.cshtml.g.cs
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\ConfirmEmail.cshtml.g.cs
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\ConfirmEmailChange.cshtml.g.cs
@@ -434,7 +419,6 @@ D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\net
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\ForgotPassword.cshtml.g.cs
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.cshtml.g.cs
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Lockout.cshtml.g.cs
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\LoginWith2fa.cshtml.g.cs
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\LoginWithRecoveryCode.cshtml.g.cs
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
@@ -465,17 +449,44 @@ D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\net
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Error.cshtml.g.cs
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Login.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Admin\_ViewImports.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Admin\_ViewStart.cshtml.g.cs
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Artists\Index.cshtml.g.cs
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Artists\Show.cshtml.g.cs
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Songs\Top_songs.cshtml.g.cs
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Songs\Index.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Genres\Index.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Page\AboutUs.cshtml.g.cs
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Page\Feed.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Page\Index.cshtml.g.cs
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Page\OurVision.cshtml.g.cs
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Page\Privacy.cshtml.g.cs
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Page\Sitemap.cshtml.g.cs
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Page\TermAndConditions.cshtml.g.cs
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\GetGenres\Default.cshtml.g.cs
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Genres\Index.cshtml.g.cs
-D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Songs\Show.cshtml.g.cs
 D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Search\Index.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\GetGenres\Default.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_FooterPartial.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutOld.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartialOld.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_NavPartial.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Songs\Index.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Songs\Show.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Songs\Top_songs.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.RazorTargetAssemblyInfo.cache
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.RazorTargetAssemblyInfo.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.Views.pdb
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.csproj.CopyComplete
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.dll
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.pdb
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.genruntimeconfig.cache
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Songs Manager.csprojAssemblyReference.cache
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Views\Admin\loggi.cshtml.g.cs
+D:\Visual Studio Projects\source\repos\Songs Manager\Songs Manager\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs

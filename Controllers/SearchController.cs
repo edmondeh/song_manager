@@ -17,7 +17,7 @@ namespace Songs_Manager.Controllers
             _searchService = searchService;
         }
         // POST: Search
-        [HttpPost]
+        [HttpPost("search")]
         public ActionResult Index(string SearchString)
         {
             //var query = HttpContext.Request.Form["searchString"];
