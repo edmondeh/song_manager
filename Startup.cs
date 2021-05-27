@@ -39,6 +39,13 @@ namespace Songs_Manager
             services.AddRazorPages().AddRazorRuntimeCompilation();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
+            services.ConfigureApplicationCookie(options =>
+            {
+                //
+                options.LoginPath = "/Login";
+                options.AccessDeniedPath = "/AccessDenied";
+            });
+
             //Configure the Services
             services.AddTransient<ArtistService>();
             services.AddTransient<SongService>();
