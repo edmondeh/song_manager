@@ -1,0 +1,82 @@
+﻿@{
+    string siteUrl = Context.Request.Scheme + System.Uri.SchemeDelimiter + Context.Request.Host.Value;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Songs Manager ● @ViewData["Title"]</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link href="~/plugins/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/plugins/Ionicons/css/ionicons.min.css" rel="stylesheet" />
+    @RenderSection("css", required: false)
+    <link href="~/assets/css/AdminLTE.min.css" rel="stylesheet" />
+    <link href="~/assets/css/skins/skin-black.min.css" rel="stylesheet" />
+    <link href="~/assets/plugins/pace/pace.min.css" rel="stylesheet" />
+    <link href="~/plugins/morris.js/morris.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <script src="~/plugins/jquery/dist/jquery.min.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition skin-black sidebar-mini">
+    <div class="wrapper">
+        <partial name="Includes/_Header.cshtml" />
+        <partial name="Includes/_Sidebar.cshtml" />
+        <div class="content-wrapper">
+            <section class="content-header">
+                <h1>@ViewData["Title"]<small>@ViewData["PageDescription"]</small></h1>
+                <ol class="breadcrumb">
+                    @RenderSection("breadcrumb", required: false)
+                </ol>
+                @*@stack('add-new')*@
+            </section>
+            <section class="content container-fluid">
+                @*@if (\Session::has('flash_message'))
+                <div class="alert alert-success" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    { \Session::get('flash_message') }}
+                </div>
+                @endif
+                @include('flash::message')
+                @if ($errors->any())
+                <div class="alert alert-danger">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                        <li>{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                @endif*@
+                @RenderBody()
+            </section>
+        </div>
+        @*@include('admin.includes.footer')*@
+        @*@include('admin.includes.sidebar-right')*@
+        <div class="control-sidebar-bg"></div>
+    </div>
+    <script src="~/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/plugins/PACE/pace.min.js"></script>
+    <script src="~/plugins/raphael/raphael.min.js"></script>
+    <script src="~/plugins/morris.js/morris.min.js"></script>
+    @RenderSection("Scripts", required: false)
+    <script src="~/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="~/plugins/fastclick/lib/fastclick.js"></script>
+    <script src="~/assets/js/adminlte.min.js"></script>
+    @RenderSection("scr", required: false)
+    <script src="~/assets/js/main.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

@@ -41,7 +41,6 @@ namespace Songs_Manager
 
             services.ConfigureApplicationCookie(options =>
             {
-                //
                 options.LoginPath = "/Login";
                 options.AccessDeniedPath = "/AccessDenied";
             });

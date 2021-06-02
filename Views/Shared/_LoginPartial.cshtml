@@ -8,6 +8,7 @@
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" asp-area="Identity" asp-page="/Account/Manage/Index" role="button" aria-haspopup="true" aria-expanded="false">Hello @User.Identity.Name!</a>
             <div class="dropdown-menu">
+                <a class="dropdown-item" asp-controller="Admin" asp-action="Index">Admin Dashboard</a>
                 <form id="logout-form" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
                     <a class="dropdown-item" type="submit">Logout</a>
                 </form>

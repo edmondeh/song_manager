@@ -15,7 +15,7 @@ namespace Songs_Manager.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.3")
+                .HasAnnotation("ProductVersion", "3.1.15")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -70,71 +70,6 @@ namespace Songs_Manager.Data.Migrations
                     b.ToTable("AspNetRoleClaims");
                 });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUser", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<int>("AccessFailedCount")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(256)")
-                        .HasMaxLength(256);
-
-                    b.Property<bool>("EmailConfirmed")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("LockoutEnabled")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTimeOffset?>("LockoutEnd")
-                        .HasColumnType("datetimeoffset");
-
-                    b.Property<string>("NormalizedEmail")
-                        .HasColumnType("nvarchar(256)")
-                        .HasMaxLength(256);
-
-                    b.Property<string>("NormalizedUserName")
-                        .HasColumnType("nvarchar(256)")
-                        .HasMaxLength(256);
-
-                    b.Property<string>("PasswordHash")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PhoneNumber")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("PhoneNumberConfirmed")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("SecurityStamp")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("TwoFactorEnabled")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("UserName")
-                        .HasColumnType("nvarchar(256)")
-                        .HasMaxLength(256);
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("NormalizedEmail")
-                        .HasName("EmailIndex");
-
-                    b.HasIndex("NormalizedUserName")
-                        .IsUnique()
-                        .HasName("UserNameIndex")
-                        .HasFilter("[NormalizedUserName] IS NOT NULL");
-
-                    b.ToTable("AspNetUsers");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
                     b.Property<int>("Id")
@@ -162,12 +97,10 @@ namespace Songs_Manager.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(128)")
-                        .HasMaxLength(128);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderKey")
-                        .HasColumnType("nvarchar(128)")
-                        .HasMaxLength(128);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("nvarchar(max)");
@@ -204,12 +137,10 @@ namespace Songs_Manager.Data.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(128)")
-                        .HasMaxLength(128);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(128)")
-                        .HasMaxLength(128);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Value")
                         .HasColumnType("nvarchar(max)");
@@ -367,97 +298,97 @@ namespace Songs_Manager.Data.Migrations
                         {
                             Id = 1,
                             ArtistId = 1,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 1,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697)
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915)
                         },
                         new
                         {
                             Id = 2,
                             ArtistId = 1,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 2,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697)
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915)
                         },
                         new
                         {
                             Id = 3,
                             ArtistId = 2,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 2,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697)
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915)
                         },
                         new
                         {
                             Id = 4,
                             ArtistId = 3,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 2,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697)
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915)
                         },
                         new
                         {
                             Id = 5,
                             ArtistId = 3,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 3,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697)
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915)
                         },
                         new
                         {
                             Id = 6,
                             ArtistId = 4,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 5,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697)
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915)
                         },
                         new
                         {
                             Id = 7,
                             ArtistId = 4,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 6,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697)
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915)
                         },
                         new
                         {
                             Id = 8,
                             ArtistId = 5,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 5,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697)
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915)
                         },
                         new
                         {
                             Id = 9,
                             ArtistId = 5,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 6,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697)
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915)
                         },
                         new
                         {
                             Id = 10,
                             ArtistId = 6,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 5,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697)
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915)
                         },
                         new
                         {
                             Id = 11,
                             ArtistId = 6,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 6,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697)
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915)
                         },
                         new
                         {
                             Id = 12,
                             ArtistId = 7,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 9,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697)
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915)
                         });
                 });
 
@@ -741,6 +672,77 @@ namespace Songs_Manager.Data.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Songs_Manager.Data.Models.Identity.User", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("FirstName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(256);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedEmail")
+                        .HasName("EmailIndex");
+
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasName("UserNameIndex")
+                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.ToTable("AspNetUsers");
+                });
+
             modelBuilder.Entity("Songs_Manager.Data.Models.Song", b =>
                 {
                     b.Property<int>("SongId")
@@ -1017,217 +1019,217 @@ namespace Songs_Manager.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 1,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 1
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 6,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 1
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 6,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 2
                         },
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 9,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 3
                         },
                         new
                         {
                             Id = 5,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 6,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 4
                         },
                         new
                         {
                             Id = 6,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 8,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 4
                         },
                         new
                         {
                             Id = 7,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 2,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 5
                         },
                         new
                         {
                             Id = 8,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 4,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 5
                         },
                         new
                         {
                             Id = 9,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 1,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 6
                         },
                         new
                         {
                             Id = 10,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 4,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 6
                         },
                         new
                         {
                             Id = 11,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 2,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 7
                         },
                         new
                         {
                             Id = 12,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 4,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 7
                         },
                         new
                         {
                             Id = 13,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 6,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 8
                         },
                         new
                         {
                             Id = 14,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 7,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 8
                         },
                         new
                         {
                             Id = 15,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 2,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 9
                         },
                         new
                         {
                             Id = 16,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 3,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 9
                         },
                         new
                         {
                             Id = 17,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 5,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 10
                         },
                         new
                         {
                             Id = 18,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 6,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 10
                         },
                         new
                         {
                             Id = 19,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 5,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 11
                         },
                         new
                         {
                             Id = 20,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 6,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 11
                         },
                         new
                         {
                             Id = 21,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 5,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 12
                         },
                         new
                         {
                             Id = 22,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 6,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 12
                         },
                         new
                         {
                             Id = 23,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 5,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 13
                         },
                         new
                         {
                             Id = 24,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 6,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 13
                         },
                         new
                         {
                             Id = 25,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 6,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 14
                         },
                         new
                         {
                             Id = 26,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 7,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 15
                         },
                         new
                         {
                             Id = 27,
-                            CreatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            CreatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             GenreId = 7,
-                            LastUpdatedAt = new DateTime(2021, 5, 8, 19, 47, 26, 723, DateTimeKind.Local).AddTicks(9697),
+                            LastUpdatedAt = new DateTime(2021, 6, 1, 19, 28, 58, 235, DateTimeKind.Local).AddTicks(8915),
                             SongId = 16
                         });
                 });
@@ -1243,7 +1245,7 @@ namespace Songs_Manager.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("Songs_Manager.Data.Models.Identity.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1252,7 +1254,7 @@ namespace Songs_Manager.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("Songs_Manager.Data.Models.Identity.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1267,7 +1269,7 @@ namespace Songs_Manager.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("Songs_Manager.Data.Models.Identity.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1276,7 +1278,7 @@ namespace Songs_Manager.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("Songs_Manager.Data.Models.Identity.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
