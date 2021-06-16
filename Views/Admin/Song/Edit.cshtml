@@ -1,0 +1,93 @@
+﻿@model SongEditVM
+@{
+    Layout = "";
+    string siteUrl = Context.Request.Scheme + System.Uri.SchemeDelimiter + Context.Request.Host.Value;
+}
+
+<link href="~/plugins/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/plugins/select2/dist/css/select2.min.css" rel="stylesheet" />
+<link href="~/assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" />
+<link href="~/assets/css/AdminLTE.min.css" rel="stylesheet" />
+<script src="~/plugins/jquery/dist/jquery.min.js"></script>
+<script src="~/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="~/plugins/select2/dist/js/select2.full.min.js"></script>
+<script src="~/assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<script>
+    $(function () {
+        $('.textarea').wysihtml5();
+    });
+</script>
+<div>
+    <div class="col-md-12">
+        <h2 style="text-align: center; margin: 30px;">@Model.Name</h2>
+    </div>
+    <br>
+</div>
+@if (ViewData.ModelState.ErrorCount > 0)
+{
+    <div class="alert alert-danger">
+        <ul>
+            <div asp-validation-summary="All" class="text-danger"></div>
+        </ul>
+    </div>
+}
+<form asp-controller="Song" asp-route-id="@Model.SongId" asp-action="Edit" enctype="multipart/form-data">
+    <table class="table table-hover1 table-bordered">
+        <thead>
+            <tr>
+                <th class="col-sm-4">Edit</th>
+                <th>Info</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Artist id: *</td>
+                <td><input class="form-control" asp-for="@Model.SongId" readonly></td>
+            </tr>
+            <tr>
+                <td>Name: *</td>
+                <td><input class="form-control" asp-for="@Model.Name" required></td>
+            </tr>
+            <tr>
+                <td>Slug: *</td>
+                <td><input class="form-control" asp-for="@Model.Slug" required></td>
+            </tr>
+            <tr>
+                <td>Artists: *</td>
+                <td>
+                    <select style="width:auto;" class="form-control select2" multiple="multiple" required="" asp-for="@Model.Artists" asp-items="@ViewBag.Artists">
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Username: *</td>
+                <td>
+                    <select style="width:auto;" class="form-control select2" multiple="multiple" required="" asp-for="@Model.UserName">
+                        <option value="User 1">User 1</option>
+                        <option value="User 2">User 2</option>
+                        <option value="User 3">User 3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Genres: *</td>
+                <td>
+                    <select style="width:auto;" class="form-control select2" multiple="multiple" required="" asp-for="@Model.Genres" asp-items="@ViewBag.Genres">
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Album: *</td>
+                <td><input class="form-control" asp-for="@Model.Album" required></td>
+            </tr>
+            <tr>
+                <td>Lyrics: *</td>
+                <td><textarea class="textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" asp-for="@Model.Lyrics" required></textarea></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Save changes</button>
+    </div>
+</form>

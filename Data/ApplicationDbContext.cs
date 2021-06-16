@@ -29,6 +29,7 @@ namespace Songs_Manager.Data
         public DbSet<Genre> Genres { get; set; }
         public DbSet<Song_Genre> Song_Genres { get; set; }
         public DbSet<Artist_Genre> Artist_Genres { get; set; }
+        public DbSet<LyricsSubmissions> LyricsSubmissions { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

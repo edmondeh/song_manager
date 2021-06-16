@@ -36,9 +36,30 @@
                 <ol class="breadcrumb">
                     @RenderSection("breadcrumb", required: false)
                 </ol>
-                @*@stack('add-new')*@
+                @RenderSection("AddNew", required: false)
             </section>
             <section class="content container-fluid">
+                @if (TempData.Peek("Message") != null)
+                {
+                    <div class="alert alert-success" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        Message: @TempData.Peek("Message")
+                    </div>
+                }
+                @if (TempData.Peek("Error") != null)
+                {
+                    <div class="alert alert-danger">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <ul>
+                            Message: @TempData.Peek("Message")
+                        </ul>
+                    </div>
+                }
+
                 @*@if (\Session::has('flash_message'))
                 <div class="alert alert-success" role="alert">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">

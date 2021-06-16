@@ -27,8 +27,8 @@
         </form>
         <ul class="sidebar-menu" data-widget="tree">
             <li class="header">HEADER</li>
-            <li class="@(uri.Segments[1] == "admin" ? "active" : "")"><a asp-controller="Admin" asp-action="Index"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
-<li class="treeview ">
+            <li class="@(uri.Segments.Contains("admin") ? "active" : "")"><a asp-controller="Admin" asp-action="Index"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
+            <li class="treeview @(uri.Segments.Contains("admin/") && uri.Segments.Contains("artists") ? "active" : "")">
                 <a href="#">
                     <i class="fa fa-users"></i> <span>Artists</span>
                     <span class="pull-right-container">
@@ -36,7 +36,7 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li class=""><a href="/admin/artists"><i class="fa fa-user" aria-hidden="true"></i> Artists</a></li>
+                    <li class="@(uri.Segments.Contains("admin/") && uri.Segments.Contains("artists") ? "active active-sub" : "")"><a href="/admin/artists"><i class="fa fa-user" aria-hidden="true"></i> Artists</a></li>
                     <li class=""><a href="/admin/artists/create"><i class="fa fa-plus" aria-hidden="true"></i> Add new artist</a></li>
                 </ul>
             </li>
