@@ -39,24 +39,22 @@
                 @RenderSection("AddNew", required: false)
             </section>
             <section class="content container-fluid">
-                @if (TempData.Peek("Message") != null)
+                @if (TempData.Peek("SuccessMessage") != null)
                 {
                     <div class="alert alert-success" role="alert">
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
-                        Message: @TempData.Peek("Message")
+                        Message: @TempData.Peek("SuccessMessage")
                     </div>
                 }
-                @if (TempData.Peek("Error") != null)
+                @if (TempData.Peek("ErrorMessage") != null)
                 {
                     <div class="alert alert-danger">
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
-                        <ul>
-                            Message: @TempData.Peek("Message")
-                        </ul>
+                        Message: @TempData.Peek("ErrorMessage")
                     </div>
                 }
 

@@ -28,7 +28,7 @@
         <ul class="sidebar-menu" data-widget="tree">
             <li class="header">HEADER</li>
             <li class="@(uri.Segments.Contains("admin") ? "active" : "")"><a asp-controller="Admin" asp-action="Index"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
-            <li class="treeview @(uri.Segments.Contains("admin/") && uri.Segments.Contains("artists") ? "active" : "")">
+            <li class="treeview @(uri.Segments.Contains("admin/") && uri.Segments.Contains("artists") || uri.Segments.Contains("artists/") ? "active" : "")">
                 <a href="#">
                     <i class="fa fa-users"></i> <span>Artists</span>
                     <span class="pull-right-container">
@@ -37,10 +37,10 @@
                 </a>
                 <ul class="treeview-menu">
                     <li class="@(uri.Segments.Contains("admin/") && uri.Segments.Contains("artists") ? "active active-sub" : "")"><a href="/admin/artists"><i class="fa fa-user" aria-hidden="true"></i> Artists</a></li>
-                    <li class=""><a href="/admin/artists/create"><i class="fa fa-plus" aria-hidden="true"></i> Add new artist</a></li>
+                    <li class="@(uri.Segments.Contains("admin/") && uri.Segments.Contains("artists/") && uri.Segments.Contains("create") ? "active active-sub" : "")"><a href="/admin/artists/create"><i class="fa fa-plus" aria-hidden="true"></i> Add new artist</a></li>
                 </ul>
             </li>
-            <li class="treeview ">
+            <li class="treeview @(uri.Segments.Contains("admin/") && uri.Segments.Contains("songs") || uri.Segments.Contains("songs/") ? "active" : "")">
                 <a href="#">
                     <i class="fa fa-music"></i> <span>Songs</span>
                     <span class="pull-right-container">
@@ -48,8 +48,8 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li class=""><a href="/admin/songs"><i class="fa fa-music" aria-hidden="true"></i> Songs</a></li>
-                    <li class=""><a href="/admin/songs/create"><i class="fa fa-plus" aria-hidden="true"></i> Add new song</a></li>
+                    <li class="@(uri.Segments.Contains("admin/") && uri.Segments.Contains("songs") ? "active active-sub" : "")"><a href="/admin/songs"><i class="fa fa-music" aria-hidden="true"></i> Songs</a></li>
+                    <li class="@(uri.Segments.Contains("admin/") && uri.Segments.Contains("songs/") && uri.Segments.Contains("create") ? "active active-sub" : "")"><a href="/admin/songs/create"><i class="fa fa-plus" aria-hidden="true"></i> Add new song</a></li>
                 </ul>
             </li>
             <li class="treeview ">
@@ -64,7 +64,6 @@
                     <li class=""><a href="/admin/genres/create"><i class="fa fa-plus" aria-hidden="true"></i> Add new genre</a></li>
                 </ul>
             <li class=""><a href="/admin/submissions"><i class="fa fa-music" aria-hidden="true"></i> Submissions</a></li>
-            </li>
             <li class="treeview ">
                 <a href="#">
                     <i class="fa fa-users"></i> <span>User Managment</span>

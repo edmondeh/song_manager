@@ -19,7 +19,7 @@ namespace Songs_Manager.Data.Services
             _context = context;
         }
 
-        public async Task<List<SongVM>> GetSongs(int? pageNumber = null)
+        public async Task<PaginatedList<SongVM>> GetSongs(int? pageNumber = null)
         {
             //var songs = from s in _context.Songs
             //               select s;

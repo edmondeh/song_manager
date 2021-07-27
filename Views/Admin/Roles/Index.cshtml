@@ -1,0 +1,131 @@
+﻿@model List<PermissionVM>
+@{
+    ViewData["Title"] = "Roles";
+    ViewData["PageDescription"] = "All Roles";
+    string siteUrl = Context.Request.Scheme + System.Uri.SchemeDelimiter + Context.Request.Host.Value;
+}
+
+
+@section css
+{
+    <link href="~/plugins/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.2.0/css/select.dataTables.min.css" />
+    <link rel="stylesheet" href="//cdn.datatables.net/buttons/1.2.4/css/buttons.dataTables.min.css" />
+}
+
+
+@section breadcrumb
+{
+    <li><a asp-controller="Roles" asp-action="Index"><i class="fa fa-users"></i> Roles</a></li>
+}
+
+
+@section AddNew
+{
+    <div class="">
+        <a class="btn btn-success m-t-10" href="/admin/roles/create" role="button">Add Role</a>
+    </div>
+}
+
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">@ViewData["PageDescription"]</h3>
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
+                        <i class="fa fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="box-body" style="overflow-x:auto;">
+                <table class="table table-bordered table-hover datatable dt-select">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;"><input type="checkbox" id="select-all" /></th>
+                            <!-- <th width="6%">#</th> -->
+                            <th>Name</th>
+                            <th>Permissions</th>
+                            <th>More</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var role in Model)
+                        {
+                            <tr data-entry-id="@role.RoleId">
+                                <td></td>
+                                  <!-- <td>@role.RoleId</td> -->
+                                <td>@role.RoleName</td>
+                                <td>@foreach (var permission in role.RoleClaims.Where(p => p.Selected == true))
+                                {<span class="label label-success label-many">@permission.Value.Substring(12)</span>}</td>
+                                <td>
+                                    <a onclick="showAjaxModal('@siteUrl/admin/roles/@role.RoleId/edit');" class="btn btn-xs btn-info"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
+                                    <form method="POST" asp-controller="Roles" asp-route-id="@role.RoleId" asp-action="Delete" accept-charset="UTF-8" style="display: inline-block;" onsubmit="return confirm('&#039;Are you sure?&#039;');">
+                                        <button class="btn btn-xs btn-danger" type="submit"><i class="fa fa-times" aria-hidden="true"></i> Delete</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <!-- <div class="box-footer">
+            </div> -->
+        </div>
+        <div class="modal fade" id="modal_ajax">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Songs Manager</h4>
+                    </div>
+                    <div class="modal-body-1">
+                        <div class="modal-body" style="height:auto; overflow:auto;">
+                        </div>
+                        <!--
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts
+{
+    <script src="~/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="~/plugins/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="//cdn.datatables.net/buttons/1.2.4/js/dataTables.buttons.min.js"></script>
+    <script src="//cdn.datatables.net/buttons/1.2.4/js/buttons.flash.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+    <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+    <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.4/js/buttons.colVis.min.js"></script>
+    <script src="https://cdn.datatables.net/select/1.2.0/js/dataTables.select.min.js"></script>
+}
+
+@section scr
+{
+    <script>
+        $(document).ready(function () {
+            $(".label:nth-child(7n)").after('</br>');
+        });
+    $(function () {
+        $('.datatable1').DataTable({
+            select: true,
+        });
+    });
+    //window._token = '{{ csrf_token() }}';
+    window.route_mass_crud_entries_destroy = '@siteUrl/admin/roles_mass_destroy';
+    </script>
+}

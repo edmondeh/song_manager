@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore;
 using Songs_Manager.Data.Models;
+using Songs_Manager.Data.Models.Identity;
 using Songs_Manager.Models;
 
 namespace Songs_Manager.Data

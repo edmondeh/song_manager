@@ -73,12 +73,12 @@ namespace Songs_Manager.Seeds
         }
         private async static Task SeedClaimsForUser(this RoleManager<IdentityRole> roleManager)
         {
-            var adminRole = await roleManager.FindByNameAsync("SuperAdmin");
+            var adminRole = await roleManager.FindByNameAsync("User");
             await roleManager.AddPermissionClaim(adminRole, "Submissions");
         }
         private async static Task SeedClaimsForAdmin(this RoleManager<IdentityRole> roleManager)
         {
-            var adminRole = await roleManager.FindByNameAsync("SuperAdmin");
+            var adminRole = await roleManager.FindByNameAsync("Admin");
             await roleManager.AddPermissionClaim(adminRole, "Artists");
             await roleManager.AddPermissionClaim(adminRole, "Songs");
             await roleManager.AddPermissionClaim(adminRole, "Genres");

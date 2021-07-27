@@ -30,7 +30,7 @@ namespace Songs_Manager.Controllers.Admin
         public string Message { get; set; }
 
         // GET: UsersController
-        [Route("Admin/Users")]
+        [Route("admin/users")]
         public async Task<IActionResult> Index()
         {
             var users = await _usersSerivce.GetAllUsersWithRolesExceptCurrentUser();
@@ -44,7 +44,7 @@ namespace Songs_Manager.Controllers.Admin
         }
 
         // GET: UsersController/Create
-        [Route("Admin/Users/Create")]
+        [Route("admin/users/Create")]
         public ActionResult Create()
         {
             PopulateRolesDropDownList();
@@ -82,50 +82,94 @@ namespace Songs_Manager.Controllers.Admin
         }
 
         // GET: UsersController/Edit/5
-        public ActionResult Edit(int id)
+        [Route("/admin/users/{id}/edit")]
+        public async Task<IActionResult> Edit(string id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var _user = await _usersSerivce.GetUserWithRoles(id);
+            //await _rolesSerivce.GetAllRoles();
+            if (_user == null)
+            {
+                return NotFound();
+            }
+            PopulateRolesDropDownList(_user.Roles);
+            return View("/Views/Admin/Users/Edit.cshtml", _user);
         }
 
         // POST: UsersController/Edit/5
-        [HttpPost]
+        [HttpPost("/admin/users/{id}/edit")]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public async Task<IActionResult> Edit(string id, [FromForm] UsersEditVM user)
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                if (id != user.UserId)
+                {
+                    return NotFound();
+                }
+                var result = await _usersSerivce.UpdateUser(user);
+
+                if (result > 0)
+                {
+                    Message = "Succesfully.";
+                    return RedirectToAction(nameof(Index));
+                }
             }
-            catch
+            catch (Exception e)
             {
-                return View();
+                Console.WriteLine(e.Message);
             }
+
+            Error = "Error";
+            Message = "Something went wrong.";
+            return View("/Views/Admin/Users/Edit.cshtml", user);
         }
 
-        // GET: UsersController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
+        //// GET: UsersController/Delete/5
+        //public ActionResult Delete(int id)
+        //{
+        //    return View();
+        //}
 
         // POST: UsersController/Delete/5
-        [HttpPost]
+        [HttpPost("/admin/users/{id}/delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public async Task<IActionResult> Delete(string id)
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                if (id == null)
+                {
+                    return NotFound();
+                }
+
+                var result = await _usersSerivce.DeleteUser(id);
+
+                if (result.isSuccess > 0)
+                {
+                    Message = "Succesfully deleted user with name " + result.name + ".";
+                    return RedirectToAction(nameof(Index));
+                }
             }
             catch
             {
-                return View();
+                Error = "Error";
+                Message = "Something went wrong.";
+                return RedirectToAction(nameof(Index));
             }
+
+            Error = "Error";
+            Message = "Something went wrong.";
+            return RedirectToAction(nameof(Index));
         }
 
         private void PopulateRolesDropDownList(object selectedRoles = null)
         {
-            ViewBag.Roles = new SelectList(_rolesSerivce.GetAllRoles().Result.AsEnumerable<IdentityRole>(), "Name", "Name", selectedRoles);
+            var roles = _rolesSerivce.GetAllRoles().Result;
+            ViewBag.Roles = new SelectList(roles, "Name", "Name", selectedRoles);
         }
     }
 }

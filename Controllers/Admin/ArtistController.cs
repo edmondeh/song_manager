@@ -180,7 +180,9 @@ namespace Songs_Manager.Controllers.Admin
             }
             catch
             {
-                return View();
+                Error = "Error";
+                Message = "Something went wrong.";
+                return RedirectToAction(nameof(Index));
             }
 
             Error = "Error";

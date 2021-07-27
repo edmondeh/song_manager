@@ -53,7 +53,7 @@ namespace Songs_Manager.Data.Services
         }
 
         public List<Artist> GetAllArtists() => _context.Artists.ToList();
-        public async Task<List<Artist>> GetAllArtists(int? pageNumber)
+        public async Task<PaginatedList<Artist>> GetAllArtists(int? pageNumber)
         {
             var artists = _context.Artists;
 

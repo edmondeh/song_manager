@@ -57,6 +57,7 @@ namespace Songs_Manager
             //Configure the Services
             services.AddTransient<UsersSerivce>();
             services.AddTransient<RolesSerivce>();
+            services.AddTransient<PermissionsService>();
             services.AddTransient<ArtistService>();
             services.AddTransient<SongService>();
             services.AddTransient<GenreService>();

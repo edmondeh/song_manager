@@ -13,6 +13,6 @@ namespace Songs_Manager.Data.Models.Identity
         public string FirstName { get; set; }
         [PersonalData]
         public string LastName { get; set; }
-
+        public List<IdentityRole> Roles { get; set; }
     }
 }

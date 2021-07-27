@@ -17,7 +17,6 @@ namespace Songs_Manager.Data.ViewModels.Admin
 
     public class UsersCreateVM
     {
-        [Required]
         public string UserName { get; set; }
         [Required]
         [DataType(DataType.EmailAddress)]
@@ -30,5 +29,24 @@ namespace Songs_Manager.Data.ViewModels.Admin
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
         public List<string> Roles { get; set; }
+    }
+
+    public class UsersEditVM
+    {
+        [Required]
+        public string UserId { get; set; }
+        public string UserName { get; set; }
+        [Required]
+        [DataType(DataType.EmailAddress)]
+        public string Email { get; set; }
+        //[Required]
+        [DataType(DataType.Password)]
+        public string Password { get; set; }
+        //[Required]
+        [DataType(DataType.Password)]
+        //[Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        public string ConfirmPassword { get; set; }
+        public IList<UserRolesVM> Roles { get; set; }
+        public IEnumerable<string> NewRoles { get; set; }
     }
 }

@@ -34,14 +34,14 @@
             <form class="form-horizontal" method="POST" asp-controller="Users" asp-action="Create">
                 <div class="box-body">
                     <div asp-validation-summary="All" class="text-danger"></div>
-                    <div class="form-group m-t-20">
+                    @*<div class="form-group m-t-20">
                         <label asp-for="@Model.UserName" class="col-sm-2 control-label">UserName: *</label>
                         <div class="col-sm-9">
                             <input class="form-control" placeholder="Name" asp-for="@Model.UserName" required>
                             <span asp-validation-for="@Model.UserName" class="text-danger"></span>
                         </div>
-                    </div>
-                    <div class="form-group">
+                    </div>*@
+                    <div class="form-group m-t-20">
                         <label asp-for="@Model.Email" class="col-sm-2 control-label">Email: *</label>
                         <div class="col-sm-9">
                             <input class="form-control" placeholder="Email" asp-for="@Model.Email" required>
@@ -73,7 +73,7 @@
                 </div>
                 <div class="box-footer">
                     <button onclick="goBack()" class="btn btn-danger">Cancel</button>
-                    <button type="submit" class="btn btn-success">&nbsp;Save&nbsp;</button>
+                    <button type="submit" class="btn btn-success">&nbsp;Create&nbsp;</button>
                 </div>
             </form>
         </div>

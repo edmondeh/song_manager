@@ -24,7 +24,7 @@ namespace Songs_Manager.Controllers
         public ActionResult Index(int? pageNumber)
         {
             //String.IsNullOrEmpty(slug);
-            List<Artist> allArtists = _artistService.GetAllArtists(pageNumber).Result;
+            var allArtists = _artistService.GetAllArtists(pageNumber).Result;
             return View(allArtists);
         }
 

@@ -22,7 +22,7 @@ namespace Songs_Manager.Controllers
         // GET: songs
         public ActionResult Index(int? pageNumber)
         {
-            List<SongVM> songs = _songService.GetSongs(pageNumber).Result;
+            var songs = _songService.GetSongs(pageNumber).Result;
             return View(songs);
         }
 
